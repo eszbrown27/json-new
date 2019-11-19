@@ -1,0 +1,1806 @@
+)]}'
+{
+  "log": [
+    {
+      "commit": "49b134d3d00dcaa6e3be0743f07ac581a0afd426",
+      "tree": "656ec31ff3ed1f47287335c0015084f535f36729",
+      "parents": [
+        "7b3dd45956238a090220bdf6ea6df1f70d71d473"
+      ],
+      "author": {
+        "name": "Jonathan Ross",
+        "email": "jonross@chromium.org",
+        "time": "Mon Nov 18 16:07:35 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 16:07:35 2019"
+      },
+      "message": "Suppress two WebGL tests on Android\n\nRecently the two tests concerned here were suppressed on\n[ mac no-passthrough ] however they also fail on Android.\nI\u0027m updating to be just [ no-passthrough ] until the root\ncause can be addressed.\n\nTBR\u003dynovikov@chromium.org\nTEST\u003dwebgl2_conformance_tests\nWebglExtension_WEBGL_draw_instanced_base_vertex_base_instance\nWebglExtension_WEBGL_multi_draw_instanced_base_vertex_base_instance\n\nBug: 1025719\nChange-Id: Ia6389b4456b4a231e26014e18dccb28fa9b0165c\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921558\nReviewed-by: Jonathan Ross \u003cjonross@chromium.org\u003e\nCommit-Queue: Jonathan Ross \u003cjonross@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716165}\n"
+    },
+    {
+      "commit": "7b3dd45956238a090220bdf6ea6df1f70d71d473",
+      "tree": "c63725b4d182fb571510a2a6fd0e902561d1a13b",
+      "parents": [
+        "16d8196f33c76e753507c476c9a698ee61331b3c"
+      ],
+      "author": {
+        "name": "Raphael Kubo da Costa",
+        "email": "raphael.kubo.da.costa@intel.com",
+        "time": "Mon Nov 18 16:06:56 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 16:06:56 2019"
+      },
+      "message": "bindings: Assign TODO to bug 715122 rather than myself.\n\nInstead of having a TODO with my name in it, point to the relevant bug I\nfiled at the time so that it is easier to follow up in the future.\n\nTBR\u003dharaken, yukishiino\n\nChange-Id: Ieadd90b2d1fa8991b62abf5d7d87a11c5fb01a39\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921975\nReviewed-by: Raphael Kubo da Costa \u003craphael.kubo.da.costa@intel.com\u003e\nCommit-Queue: Raphael Kubo da Costa \u003craphael.kubo.da.costa@intel.com\u003e\nCr-Commit-Position: refs/heads/master@{#716164}\n"
+    },
+    {
+      "commit": "16d8196f33c76e753507c476c9a698ee61331b3c",
+      "tree": "64a06937ad39e86a7521d978e33be354ad15f300",
+      "parents": [
+        "20f914533a4b7a2b297012ab8d3011a57e377743"
+      ],
+      "author": {
+        "name": "Mikel Astiz",
+        "email": "mastiz@chromium.org",
+        "time": "Mon Nov 18 16:05:29 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 16:05:29 2019"
+      },
+      "message": "Do not instantiate base::FieldTrialList explicitly in tests\n\nThe test suite already instantiates a FieldTrialList as per\nhttps://chromium-review.googlesource.com/c/chromium/src/+/1883567 so\nit\u0027s no longer necessary to do so explicitly in tests.\n\nThis patch addresses unit tests under:\n/components/network_session_configurator\n\nThis CL was uploaded by git cl split.\n\nR\u003dbnc@chromium.org\n\nBug: 1018667\nChange-Id: I4ec74dfa5fb2806f959aa9598498aedb574eca8e\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917505\nAuto-Submit: Mikel Astiz \u003cmastiz@chromium.org\u003e\nReviewed-by: Bence Béky \u003cbnc@chromium.org\u003e\nCommit-Queue: Bence Béky \u003cbnc@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716163}\n"
+    },
+    {
+      "commit": "20f914533a4b7a2b297012ab8d3011a57e377743",
+      "tree": "a75f7b27aff2b1ff81255fc529864c85b7806b1d",
+      "parents": [
+        "ba27c0c3228e6807b54b72dc61a487337f0c49ba"
+      ],
+      "author": {
+        "name": "Fredrik Söderquist",
+        "email": "fs@opera.com",
+        "time": "Mon Nov 18 16:02:33 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 16:02:33 2019"
+      },
+      "message": "Re-enable rendering.desktop/balls_svg_animations\n\nAfter d663ac73d99e865aadaf6fbb70021b58e727d3b4, this test should no\nlonger be timing out. Re-enable for desktop platforms first.\n\nBug: 1000473\nChange-Id: I7de6f9912254e02c7cc5f1795666d93b7da690d8\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1886615\nCommit-Queue: Fredrik Söderquist \u003cfs@opera.com\u003e\nReviewed-by: Caleb Rouleau \u003ccrouleau@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716162}\n"
+    },
+    {
+      "commit": "ba27c0c3228e6807b54b72dc61a487337f0c49ba",
+      "tree": "89d5f2c8fe1f30bf4e6bf39ab8310a76894e5407",
+      "parents": [
+        "1dec5e9c35aa48221dc02d7568e21b523269bd74"
+      ],
+      "author": {
+        "name": "Vadym Doroshenko",
+        "email": "dvadym@chromium.org",
+        "time": "Mon Nov 18 16:00:44 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 16:00:44 2019"
+      },
+      "message": "Disable SubresourceLoadingPageLoadMetricsObserver*.HistoryPlumbing\n\nThis test is flaky on Mac. Here is an example of a failure\nhttps://ci.chromium.org/p/chromium/builders/ci/Mac10.11%20Tests/44820\n\nTBR\u003drobertogden@chromium.org\n\nBug: 1025737\nChange-Id: I106e314e5f400fe802ae4774dccf1770c719287c\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917174\nReviewed-by: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nCommit-Queue: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716161}\n"
+    },
+    {
+      "commit": "1dec5e9c35aa48221dc02d7568e21b523269bd74",
+      "tree": "e5c64b35a41becbd4f7788483c895d6b826f845b",
+      "parents": [
+        "f92c40b23285d1555d7cfe1dc981cb42706682c1"
+      ],
+      "author": {
+        "name": "Robert Kaplow",
+        "email": "rkaplow@chromium.org",
+        "time": "Mon Nov 18 16:00:41 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 16:00:41 2019"
+      },
+      "message": "Delete unused RAPPOR metric for startup URLs.\n\nMostly a revert of https://codereview.chromium.org/1283243002\n\nBug: 1016906\nChange-Id: I607d74ed4800b18f4067b3b34a7f65a317d8c10d\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917659\nReviewed-by: Steven Holte \u003cholte@chromium.org\u003e\nReviewed-by: Tommy Martino \u003ctmartino@chromium.org\u003e\nCommit-Queue: Tommy Martino \u003ctmartino@chromium.org\u003e\nAuto-Submit: Robert Kaplow \u003crkaplow@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716160}\n"
+    },
+    {
+      "commit": "f92c40b23285d1555d7cfe1dc981cb42706682c1",
+      "tree": "0a98b4386e3d88a4082ebe9cc7420b5f22e0d434",
+      "parents": [
+        "9aff2ab3e87d49f283df15ffc51e127a5a2f7cbd"
+      ],
+      "author": {
+        "name": "haozhe",
+        "email": "haozhes@chromium.org",
+        "time": "Mon Nov 18 15:59:31 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:59:31 2019"
+      },
+      "message": "Port line-height-interpolation.html to wpt\n\nChrome pass and firefox failed 4 tests\nBug report filed: https://bugzilla.mozilla.org/show_bug.cgi?id\u003d1593813\n\nBug: 900581\nChange-Id: I52f133b6662fda4a5342a630307cc761a922c898\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1887231\nReviewed-by: Xida Chen \u003cxidachen@chromium.org\u003e\nCommit-Queue: Hao Sheng \u003chaozhes@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716159}\n"
+    },
+    {
+      "commit": "9aff2ab3e87d49f283df15ffc51e127a5a2f7cbd",
+      "tree": "3cd05bcf261c3d172f7868727b104d5a66884159",
+      "parents": [
+        "eb0f58d9e7ac428691a7a7d3be9466e71e0b2d4b"
+      ],
+      "author": {
+        "name": "Maks Orlovich",
+        "email": "morlovich@chromium.org",
+        "time": "Mon Nov 18 15:57:48 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:57:48 2019"
+      },
+      "message": "security_exploit_browsertest.cc: Remove some unused helpers\n\nAppear to have become unused since:\nhttps://chromium-review.googlesource.com/c/chromium/src/+/1725049\n\n(This showed up as unused by coverage in a CL that changed signature of\n CreateURLLoaderFactory...)\n\nChange-Id: Id9e2b25371828d618beec135de82a5c12cb78196\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1918387\nCommit-Queue: Maksim Orlovich \u003cmorlovich@chromium.org\u003e\nReviewed-by: Kinuko Yasuda \u003ckinuko@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716158}\n"
+    },
+    {
+      "commit": "eb0f58d9e7ac428691a7a7d3be9466e71e0b2d4b",
+      "tree": "3daf1ff9750b0eed21f9bec23b4dff8ad7718998",
+      "parents": [
+        "c2095ecd8820c5d4836c33c0ca5fb514dcda6e45"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 15:50:36 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:50:36 2019"
+      },
+      "message": "Roll src/third_party/perfetto f66be5a8dcf8..650a1a772186 (2 commits)\n\nhttps://android.googlesource.com/platform/external/perfetto.git/+log/f66be5a8dcf8..650a1a772186\n\ngit log f66be5a8dcf8..650a1a772186 --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 lalitm@google.com Merge \"trace_processor: add copy/move constructors to potentially fix compile\"\n2019-11-18 treehugger-gerrit@google.com Merge \"Add process uid to the trace processor\"\n\nCreated with:\n  gclient setdep -r src/third_party/perfetto@650a1a772186\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/perfetto-chromium-autoroll\nPlease CC perfetto-bugs@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nTBR\u003dperfetto-bugs@google.com\n\nBug: None\nChange-Id: Ifa4776a8ed90d631bc44a9a0c379b6838f689670\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921557\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716157}\n"
+    },
+    {
+      "commit": "c2095ecd8820c5d4836c33c0ca5fb514dcda6e45",
+      "tree": "aa37a3b67448f09f6031a06edbaf6d2d5dc38ea6",
+      "parents": [
+        "48507f6082554fa1ac22b6578b531c35d559acd9"
+      ],
+      "author": {
+        "name": "Tina Wang",
+        "email": "tinazwang@chromium.org",
+        "time": "Mon Nov 18 15:49:27 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:49:27 2019"
+      },
+      "message": "Revert \"Import wpt@0b3b3e7c6135fcecae5c29f80dc1b8db723f28c0\"\n\nThis reverts commit c23144715ed7f2a9c0ec541fc16f89b6685d81fc.\n\nReason for revert: The auto import causes multiple failures on Builder\nLinux Test (dbg). See:\nhttps://ci.chromium.org/p/chromium/builders/ci/Linux%20Tests%20%28dbg%29%281%29?limit\u003d100\n\nFirst failure because of auto-import is suspected:\nhttps://ci.chromium.org/p/chromium/builders/ci/Linux%20Tests%20%28dbg%29%281%29/84608\n\nBug: 1025582\n\nOriginal change\u0027s description:\n\u003e Import wpt@0b3b3e7c6135fcecae5c29f80dc1b8db723f28c0\n\u003e \n\u003e Using wpt-import in Chromium aa63b9ce34a16e6ca3aaf7341c65846620517fd5.\n\u003e With Chromium commits locally applied on WPT:\n\u003e 788a3004cc \"Fix failing Fetch Metadata WPT\"\n\u003e b16db92566 \"[Trusted Types] Add test for duplicate names in non-enforcing mode.\"\n\u003e e83dd93c86 \"Limit backtracking on regexp called from blink.\"\n\u003e 6e3e930cf9 \"Change `sec-fetch-mode` from `no-cors` to `navigate` for \u003cembed\u003e / \u003cobject\u003e.\"\n\u003e c8b6e1ce8d \"Chromedriver] Fix PerformAction to support multi touch points cases\"\n\u003e \n\u003e \n\u003e Note to sheriffs: This CL imports external tests and adds\n\u003e expectations for those tests; if this CL is large and causes\n\u003e a few new failures, please fix the failures by adding new\n\u003e lines to TestExpectations rather than reverting. See:\n\u003e https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_platform_tests.md\n\u003e \n\u003e NOAUTOREVERT\u003dtrue\n\u003e TBR\u003dfoolip\n\u003e \n\u003e No-Export: true\n\u003e Change-Id: I060ec7549656a215e0f98897ba7c9fb1461efaec\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917051\n\u003e Reviewed-by: WPT Autoroller \u003cwpt-autoroller@chops-service-accounts.iam.gserviceaccount.com\u003e\n\u003e Commit-Queue: WPT Autoroller \u003cwpt-autoroller@chops-service-accounts.iam.gserviceaccount.com\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715924}\n\nTBR\u003dfoolip@chromium.org,wpt-autoroller@chops-service-accounts.iam.gserviceaccount.com\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nChange-Id: I73c88e8889ec263f4dc3ae7a54208140f3d64d36\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921693\nReviewed-by: Tina Wang \u003ctinazwang@chromium.org\u003e\nCommit-Queue: Tina Wang \u003ctinazwang@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716156}\n"
+    },
+    {
+      "commit": "48507f6082554fa1ac22b6578b531c35d559acd9",
+      "tree": "1cfb9d569328ada46419257b0141332b8a6d0311",
+      "parents": [
+        "f96bf6242f72d16c124883d244b14d1254f0071d"
+      ],
+      "author": {
+        "name": "Andrew Grieve",
+        "email": "agrieve@google.com",
+        "time": "Mon Nov 18 15:48:14 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:48:14 2019"
+      },
+      "message": "Android: Make create_java_binary_script.py use checked in JDK\n\nAlso removes unused --bootclasspath option\n\nBug: 693079\nChange-Id: I4b684a54f2fef90d15885a6644df9e672cc06c8b\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921297\nCommit-Queue: Peter Wen \u003cwnwen@chromium.org\u003e\nAuto-Submit: Andrew Grieve \u003cagrieve@chromium.org\u003e\nReviewed-by: Peter Wen \u003cwnwen@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716155}\n"
+    },
+    {
+      "commit": "f96bf6242f72d16c124883d244b14d1254f0071d",
+      "tree": "970a4e0ceacd806d4e7ba8ff0db5be8e032c397e",
+      "parents": [
+        "4a740711c4681446f5d547fa291c4a7806b75573"
+      ],
+      "author": {
+        "name": "Nick Harper",
+        "email": "nharper@chromium.org",
+        "time": "Mon Nov 18 15:47:42 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:47:42 2019"
+      },
+      "message": "Add IPv6-only domain to HSTS preload list\n\nChange-Id: Iad9ea5e58b3dfc4d5fb6ebc635af88f65f9513c4\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921850\nAuto-Submit: Nick Harper \u003cnharper@chromium.org\u003e\nCommit-Queue: Ryan Sleevi \u003crsleevi@chromium.org\u003e\nReviewed-by: Ryan Sleevi \u003crsleevi@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716154}\n"
+    },
+    {
+      "commit": "4a740711c4681446f5d547fa291c4a7806b75573",
+      "tree": "9259d2a6ec53567caa25fa9f710c38d0ff2afd94",
+      "parents": [
+        "25949c9f131211a0d9e201ffba3e81570f661968"
+      ],
+      "author": {
+        "name": "Luca Hunkeler",
+        "email": "hluca@google.com",
+        "time": "Mon Nov 18 15:45:54 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:45:54 2019"
+      },
+      "message": "[Autofill Assistant] Add android version and device model to ClientContext\n\nAndroid version and device model are not expected to change within the same interaction.\nTherefore we can simply get them when the service is initialized and keep them cached.\n(in the same way we are currently handling the rest of the ClientContext)\n\nBug: b/143519300\nChange-Id: I66aa7aeb6d26774fedb2f37f77a221571f70c4bf\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1910084\nReviewed-by: Mathias Carlen \u003cmcarlen@chromium.org\u003e\nCommit-Queue: Luca Hunkeler \u003chluca@google.com\u003e\nCr-Commit-Position: refs/heads/master@{#716153}\n"
+    },
+    {
+      "commit": "25949c9f131211a0d9e201ffba3e81570f661968",
+      "tree": "451b96e2e7ac24f1555da23d10ebda1ed77573eb",
+      "parents": [
+        "ada1ef324a7d4cdd692cd3d3d25c3ebb8ea2d9c7"
+      ],
+      "author": {
+        "name": "Andrew Grieve",
+        "email": "agrieve@google.com",
+        "time": "Mon Nov 18 15:33:31 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:33:31 2019"
+      },
+      "message": "Android: Use checked-in JDK to run checkstyle\n\nBug: 693079\nChange-Id: Ie50b217c572ff63b6a8b1db233e2ede0d7741b10\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921547\nCommit-Queue: Peter Wen \u003cwnwen@chromium.org\u003e\nAuto-Submit: Andrew Grieve \u003cagrieve@chromium.org\u003e\nReviewed-by: Peter Wen \u003cwnwen@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716152}\n"
+    },
+    {
+      "commit": "ada1ef324a7d4cdd692cd3d3d25c3ebb8ea2d9c7",
+      "tree": "41a5054b8df85f42cb03397ecb9b6bbba37ad7ec",
+      "parents": [
+        "d057527f3518ae5003930e26f1d42f969684c9e2"
+      ],
+      "author": {
+        "name": "Hans Wennborg",
+        "email": "hans@chromium.org",
+        "time": "Mon Nov 18 15:28:32 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:28:32 2019"
+      },
+      "message": "Revert \"Remove tools/clang/scripts/download_objdump.py\"\n\nThis reverts commit 29c801b504b0913881455835e3b3d7b39431165f.\n\nReason for revert:\nThe official/chrome/chrome_android recipe (which does not show up\non internal code search) uses this, and that recipe also builds the \nM78 and M79 branches , so can\u0027t be migrated to use the new update.py\nflag yet.\n\nWe\u0027ll have to keep this around until all builds are targeting M80 or\nlater.\n\nOriginal change\u0027s description:\n\u003e Remove tools/clang/scripts/download_objdump.py\n\u003e \n\u003e All uses have been replaced by calls to update.py --package\u003dobjdump.\n\u003e \n\u003e Bug: 884608\n\u003e Change-Id: Icb820782786a256c0a3586e8a23f62d463689afb\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917517\n\u003e Auto-Submit: Hans Wennborg \u003chans@chromium.org\u003e\n\u003e Commit-Queue: Reid Kleckner \u003crnk@chromium.org\u003e\n\u003e Reviewed-by: Reid Kleckner \u003crnk@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715750}\n\nTBR\u003dhans@chromium.org,rnk@chromium.org\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nBug: 884608, 1025703\nChange-Id: Ib048dfcbd91f4f5201a6b77525189e6185dc7e80\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921977\nReviewed-by: Hans Wennborg \u003chans@chromium.org\u003e\nCommit-Queue: Hans Wennborg \u003chans@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716151}\n"
+    },
+    {
+      "commit": "d057527f3518ae5003930e26f1d42f969684c9e2",
+      "tree": "74c6717c0e7c123af1e58688ab4e5af3d7e008e1",
+      "parents": [
+        "5280a6b8b220a02f42b587bbec709cea1ba0e5e2"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 15:15:33 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:15:33 2019"
+      },
+      "message": "Roll src/third_party/webrtc fd0e32a87a4e..4186603902fc (13 commits)\n\nhttps://webrtc.googlesource.com/src.git/+log/fd0e32a87a4e..4186603902fc\n\ngit log fd0e32a87a4e..4186603902fc --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 handellm@webrtc.org Always record timestamp of keyframe request.\n2019-11-18 mbonadei@webrtc.org Reland \"Force Chromium deps on the WebRTC component.\"\n2019-11-18 yvesg@google.com Revert \"Add AV1 RtpDepacketizer class\"\n2019-11-18 danilchap@webrtc.org Add AV1 RtpDepacketizer class\n2019-11-18 mbonadei@webrtc.org Revert \"Force Chromium deps on the WebRTC component.\"\n2019-11-18 jonaso@webrtc.org p2p_transport_channel_unittest : put frequently used checks into functions.\n2019-11-17 jerome.humbert@microsoft.com Add missing assert.h for win no-test build\n2019-11-16 hta@webrtc.org Make SCTPtransport enter \"closed\" state when DTLStransport does.\n2019-11-16 handellm@webrtc.org VideoFrame: Store a reference to an encoded frame\n2019-11-15 thaloun@chromium.org Use GetDefaultAudioEndpoint for the default communications device as well as the vanilla default device\n2019-11-15 qingsi@webrtc.org Make ICE transports injectable.\n2019-11-15 mbonadei@webrtc.org Force Chromium deps on the WebRTC component.\n2019-11-15 peah@webrtc.org Correct the upmixing of mono to stereo in ACM2\n\nCreated with:\n  gclient setdep -r src/third_party/webrtc@4186603902fc\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/webrtc-chromium-autoroll\nPlease CC webrtc-chromium-sheriffs-robots@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nTBR\u003dwebrtc-chromium-sheriffs-robots@google.com\n\nBug: chromium:1013590,chromium:None,chromium:1013590,chromium:b/144524502,chromium:1024965,chromium:b/144458371\nChange-Id: Ib258985c0cc41c04dbdba7aeba67644656f2dcb5\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921556\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716150}\n"
+    },
+    {
+      "commit": "5280a6b8b220a02f42b587bbec709cea1ba0e5e2",
+      "tree": "ff969de6c36dcb9c60ba90299611d2f4f938b868",
+      "parents": [
+        "94084ec1b0a1b766ca4a5c1549b5fb055428fee7"
+      ],
+      "author": {
+        "name": "v8-ci-autoroll-builder",
+        "email": "v8-ci-autoroll-builder@chops-service-accounts.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 15:13:20 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:13:20 2019"
+      },
+      "message": "Update V8 to version 8.0.291.\n\nSummary of changes available at:\nhttps://chromium.googlesource.com/v8/v8/+log/be605ce3..6c6d66df\n\nPlease follow these instructions for assigning/CC\u0027ing issues:\nhttps://v8.dev/docs/triage-issues\n\nPlease close rolling in case of a roll revert:\nhttps://v8-roll.appspot.com/\nThis only works with a Google account.\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:linux_optional_gpu_tests_rel\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:mac_optional_gpu_tests_rel\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:win_optional_gpu_tests_rel\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel\n\nTBR\u003dhablich@chromium.org,v8-waterfall-sheriff@grotations.appspotmail.com\n\nChange-Id: Id18e17215397d47fe01407d3565ef102b8885064\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921417\nCommit-Queue: v8-ci-autoroll-builder \u003cv8-ci-autoroll-builder@chops-service-accounts.iam.gserviceaccount.com\u003e\nReviewed-by: v8-ci-autoroll-builder \u003cv8-ci-autoroll-builder@chops-service-accounts.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716149}\n"
+    },
+    {
+      "commit": "94084ec1b0a1b766ca4a5c1549b5fb055428fee7",
+      "tree": "4f6088d563707e2c1d9a8a3222781172ced3ad98",
+      "parents": [
+        "4408ab572092e8916302337c82f38dd49b3221e9"
+      ],
+      "author": {
+        "name": "Yoichi Osato",
+        "email": "yoichio@chromium.org",
+        "time": "Mon Nov 18 15:09:46 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:09:46 2019"
+      },
+      "message": "[WebSocket] Refactor mojom::WebSocketHandshakeClient::OnConnectionEstablished\n\nAs we got to send WebSocketHandshakeResponse, selected_protocol and\nextensions at the same time ([1]), let\u0027s merge it on mojo.\nThis reduces redundant member declarations in\nWebRequestProxyingWebSocket.\n\n[1] \"[WebSocket] Do not send response headers for failed handshake.\":\nhttps://chromium-review.googlesource.com/c/chromium/src/+/1847592\n\nChange-Id: Ib109f2342e85216e7702a51c136f3f940fa8759c\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1903236\nReviewed-by: Karan Bhatia \u003ckarandeepb@chromium.org\u003e\nReviewed-by: Adam Rice \u003cricea@chromium.org\u003e\nReviewed-by: Kinuko Yasuda \u003ckinuko@chromium.org\u003e\nReviewed-by: Yutaka Hirano \u003cyhirano@chromium.org\u003e\nCommit-Queue: Yoichi Osato \u003cyoichio@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716148}\n"
+    },
+    {
+      "commit": "4408ab572092e8916302337c82f38dd49b3221e9",
+      "tree": "edd696ddd9fcb62424ca578651da73668f48d489",
+      "parents": [
+        "0328367cf6866d35f0e76928a796749c614d8143"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 15:08:50 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:08:50 2019"
+      },
+      "message": "Roll src/third_party/swiftshader aba1020d3914..8df0aaf24931 (1 commits)\n\nhttps://swiftshader.googlesource.com/SwiftShader.git/+log/aba1020d3914..8df0aaf24931\n\ngit log aba1020d3914..8df0aaf24931 --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 swiftshader.regress@gmail.com Regres: Update test lists @ aba1020d\n\nCreated with:\n  gclient setdep -r src/third_party/swiftshader@8df0aaf24931\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/swiftshader-chromium-autoroll\nPlease CC swiftshader-team+autoroll@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_chromium_msan_rel_ng;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel\nTBR\u003dswiftshader-team+autoroll@google.com\n\nBug: None\nChange-Id: I1edaeaa7f6ab8de2933c18ab8e5667f69b7c6507\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921866\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716147}\n"
+    },
+    {
+      "commit": "0328367cf6866d35f0e76928a796749c614d8143",
+      "tree": "4c9c729f90be7f76c0cda6d0df811cf1e8269cdc",
+      "parents": [
+        "2de3de85876794f78a9d8603b4c5eb8f20eed8b8"
+      ],
+      "author": {
+        "name": "Greg Thompson",
+        "email": "grt@chromium.org",
+        "time": "Mon Nov 18 15:08:39 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 15:08:39 2019"
+      },
+      "message": "Revert \"Browser shutdown cleanups (no functional changes).\"\n\nThis reverts commit 11936b318f36c4624c9bcba47f61f65cf457dc20.\n\nReason for revert: Crashy.\n\nOriginal change\u0027s description:\n\u003e Browser shutdown cleanups (no functional changes).\n\u003e \n\u003e - Make ShutdownType an enum class.\n\u003e - Introduce browser_shutdown::HasShutdownStarted as a convenience.\n\u003e - Move some Win-specific relaunch code from AttemptRestart, which runs\n\u003e   fairly early in a restart that may never actually happen, into\n\u003e   upgrade_util::RelaunchChromeBrowserImpl, which performs the actual\n\u003e   restart.\n\u003e - Switch from UMA macros to functions for one-shot metrics.\n\u003e \n\u003e BUG\u003d958865\n\u003e \n\u003e Change-Id: I75cd08c712d8bb7c674b4b5e413d79abc874bc39\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1910098\n\u003e Reviewed-by: Brian White \u003cbcwhite@chromium.org\u003e\n\u003e Reviewed-by: Marc Treib \u003ctreib@chromium.org\u003e\n\u003e Commit-Queue: Greg Thompson \u003cgrt@chromium.org\u003e\n\u003e Auto-Submit: Greg Thompson \u003cgrt@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715730}\n\nTBR\u003dtreib@chromium.org,bcwhite@chromium.org,holte@chromium.org,grt@chromium.org\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nBug: 958865,1025638,1025634\nChange-Id: Ia97829abe61fcfb362720ce74741a5d375bb811e\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921973\nReviewed-by: Greg Thompson \u003cgrt@chromium.org\u003e\nCommit-Queue: Greg Thompson \u003cgrt@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716146}\n"
+    },
+    {
+      "commit": "2de3de85876794f78a9d8603b4c5eb8f20eed8b8",
+      "tree": "0ad3a91aad3cfc005444a870bca40282e734559a",
+      "parents": [
+        "3997443f3cde4c9a5685fe939f66e9aae31d8e7b"
+      ],
+      "author": {
+        "name": "chromium-internal-autoroll",
+        "email": "chromium-internal-autoroll@skia-corp.google.com.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 14:45:04 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:45:04 2019"
+      },
+      "message": "Roll src-internal 8d735c19a560..b2ac8dce6358 (1 commits)\n\nhttps://chrome-internal.googlesource.com/chrome/src-internal.git/+log/8d735c19a560..b2ac8dce6358\n\n\nCreated with:\n  gclient setdep -r src-internal@b2ac8dce6358\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://skia-autoroll.corp.goog/r/src-internal-chromium-autoroll\nPlease CC jbudorick@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chrome.try:linux-chromeos-chrome\nTBR\u003djbudorick@google.com\n\nBug: chromium:None\nChange-Id: I1953c437ac4b9eaa68de4595a5ddcd523ea39caa\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921208\nReviewed-by: chromium-internal-autoroll \u003cchromium-internal-autoroll@skia-corp.google.com.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-internal-autoroll \u003cchromium-internal-autoroll@skia-corp.google.com.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716145}\n"
+    },
+    {
+      "commit": "3997443f3cde4c9a5685fe939f66e9aae31d8e7b",
+      "tree": "95873d995811b3ceeb8f5e62caf3d93e08e44be7",
+      "parents": [
+        "75ba0203e2a8c7e54f16f5079be6489d672808c6"
+      ],
+      "author": {
+        "name": "Mikel Astiz",
+        "email": "mastiz@chromium.org",
+        "time": "Mon Nov 18 14:38:23 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:38:23 2019"
+      },
+      "message": "Do not instantiate base::FieldTrialList explicitly in tests\n\nThe test suite already instantiates a FieldTrialList as per\nhttps://chromium-review.googlesource.com/c/chromium/src/+/1883567 so\nit\u0027s no longer necessary to do so explicitly in tests.\n\nThis patch addresses unit tests under:\n/components/omnibox\n\nThis CL was uploaded by git cl split.\n\nR\u003dmpearson@chromium.org\n\nBug: 1018667\nChange-Id: Idb0b248873001282c98db87a6dfc6381d45bbbc0\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917229\nCommit-Queue: Mikel Astiz \u003cmastiz@chromium.org\u003e\nReviewed-by: Justin Donnelly \u003cjdonnelly@chromium.org\u003e\nAuto-Submit: Mikel Astiz \u003cmastiz@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716144}\n"
+    },
+    {
+      "commit": "75ba0203e2a8c7e54f16f5079be6489d672808c6",
+      "tree": "892040ff5be9a5e6ceeb4ab89f456bbacad10969",
+      "parents": [
+        "5c18917929e20242ef781e08ac15b138a638d600"
+      ],
+      "author": {
+        "name": "Findit",
+        "email": "findit-for-me@appspot.gserviceaccount.com",
+        "time": "Mon Nov 18 14:34:45 2019"
+      },
+      "committer": {
+        "name": "Findit",
+        "email": "findit-for-me@appspot.gserviceaccount.com",
+        "time": "Mon Nov 18 14:34:45 2019"
+      },
+      "message": "Revert \"[client-hints] Allow 3P legacy Client-Hints to work with Feature Policy\"\n\nThis reverts commit aeec2ba175b9cbefda5d7d416edff684f2db97ef.\n\nReason for revert:\n\nFindit (https://goo.gl/kROfz5) identified CL at revision 716101 as the\nculprit for flakes in the build cycles as shown on:\nhttps://analysis.chromium.org/p/chromium/flake-portal/analysis/culprit?key\u003dag9zfmZpbmRpdC1mb3ItbWVyQwsSDEZsYWtlQ3VscHJpdCIxY2hyb21pdW0vYWVlYzJiYTE3NWI5Y2JlZmRhNWQ3ZDQxNmVkZmY2ODRmMmRiOTdlZgw\n\nSample Failed Build: https://ci.chromium.org/b/8896451843858020336\n\nSample Failed Step: webkit_layout_tests (experimental)\n\nSample Flaky Test: virtual/legacy-client-hints/external/wpt/client-hints/accept-ch-feature-policy-navigation.https.html\n\nOriginal change\u0027s description:\n\u003e [client-hints] Allow 3P legacy Client-Hints to work with Feature Policy\n\u003e \n\u003e Currently there are two different flags that control sending Client Hints\n\u003e to cross-origin resources: Feature Policy delegation (off-by-default) and\n\u003e a build flag that sends legacy hints on Android.\n\u003e \n\u003e This CL makes sure that these two flags play nice together, and adds\n\u003e virtual test suites to exercise them.\n\u003e \n\u003e BUG: 1022366\n\u003e Change-Id: I00ed4e9ed5a64e378def3d90227f238b9b3eb374\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1893196\n\u003e Commit-Queue: Yoav Weiss \u003cyoavweiss@chromium.org\u003e\n\u003e Reviewed-by: Tarun Bansal \u003ctbansal@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#716101}\n\n\nChange-Id: I4974dd0e5342a90f97734fddfb9ddaa6fd4fdb22\nNo-Presubmit: true\nNo-Tree-Checks: true\nNo-Try: true\nBUG: 1022366\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1920472\nCr-Commit-Position: refs/heads/master@{#716143}\n"
+    },
+    {
+      "commit": "5c18917929e20242ef781e08ac15b138a638d600",
+      "tree": "822c6ffe6d512fa1b9e2a72f5af48ec438873bf2",
+      "parents": [
+        "c06335fd9e444fd0f6e711783d63211b35586107"
+      ],
+      "author": {
+        "name": "David Roger",
+        "email": "droger@chromium.org",
+        "time": "Mon Nov 18 14:31:02 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:31:02 2019"
+      },
+      "message": "[IdentityPill] Don\u0027t show the pill if signed out while downloading image\n\nThis is a fix for the following scenario:\n- user signs in or opens Chrome\n- image starts downloading\n- user signs out\n- image download completes\n- pill is shown while signed out\n\nThe fix is to check that the user is still signed in when the download\ncompletes.\n\nFixed: 1025674\nChange-Id: I780731d23b6e89beba343c27c947c284172584ea\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919920\nReviewed-by: Monica Basta \u003cmsalama@chromium.org\u003e\nCommit-Queue: David Roger \u003cdroger@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716142}\n"
+    },
+    {
+      "commit": "c06335fd9e444fd0f6e711783d63211b35586107",
+      "tree": "32a097e15e0273d17f79f5e2facc3ce4d6ff0f39",
+      "parents": [
+        "b0e85ff6fa3fd86877cae68e5fdc2205cd0bdee1"
+      ],
+      "author": {
+        "name": "Oriol Brufau",
+        "email": "obrufau@igalia.com",
+        "time": "Mon Nov 18 14:28:02 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:28:02 2019"
+      },
+      "message": "[css-align] Triage synthesized-baseline-table-cell-001.html\n\nThe test fails because the baseline of an empty cell is the top content\nedge instead of the bottom one.\n\nBug: 1024207, 799016\nChange-Id: Iaffac133eee62a2f8f330fbcfe7a2b738837f6e1\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921971\nReviewed-by: Javier Fernandez \u003cjfernandez@igalia.com\u003e\nCommit-Queue: Oriol Brufau \u003cobrufau@igalia.com\u003e\nCr-Commit-Position: refs/heads/master@{#716141}\n"
+    },
+    {
+      "commit": "b0e85ff6fa3fd86877cae68e5fdc2205cd0bdee1",
+      "tree": "3560a8524a0fb85c0f54866218f2bbe4e30b9823",
+      "parents": [
+        "d85abc846f94a79cc32e4b186926fa2b6a2bff63"
+      ],
+      "author": {
+        "name": "Carlos Caballero",
+        "email": "carlscab@google.com",
+        "time": "Mon Nov 18 14:25:50 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:25:50 2019"
+      },
+      "message": "Remove always true check\n\nnavigation_handle-\u003eIsErrorPage() will always be false in\nDidStartNavigation as the error state is set upon commiting the\nnavigation.\n\nChange-Id: Ib8bd7e49a49b87e26a795080a45038f255295c95\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1895348\nCommit-Queue: Carlos Caballero \u003ccarlscab@google.com\u003e\nReviewed-by: Alexander Timin \u003caltimin@chromium.org\u003e\nReviewed-by: Martin Šrámek \u003cmsramek@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716140}\n"
+    },
+    {
+      "commit": "d85abc846f94a79cc32e4b186926fa2b6a2bff63",
+      "tree": "d9819583e032fba8669292e2cee42280fc6edc4d",
+      "parents": [
+        "b258fd9426e04e9f59d1fe398d817ad13dc7f6ef"
+      ],
+      "author": {
+        "name": "Daniel Vogelheim",
+        "email": "vogelheim@chromium.org",
+        "time": "Mon Nov 18 14:21:58 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:21:58 2019"
+      },
+      "message": "[Trusted Types] Fix Trusted Types for other document types\n\nBug: 951536\nChange-Id: Ia2f65ff3318ac71debba16d6d50e19d28ac5b071\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917532\nReviewed-by: Mike West \u003cmkwst@chromium.org\u003e\nCommit-Queue: Daniel Vogelheim \u003cvogelheim@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716139}\n"
+    },
+    {
+      "commit": "b258fd9426e04e9f59d1fe398d817ad13dc7f6ef",
+      "tree": "a9ebf068a83147c4d9f66652476c53aa6ed11380",
+      "parents": [
+        "b053b57b4addd0f59c1c6908448291fa5c617be4"
+      ],
+      "author": {
+        "name": "Mathias Carlen",
+        "email": "mcarlen@chromium.org",
+        "time": "Mon Nov 18 14:21:08 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:21:08 2019"
+      },
+      "message": "[AA Direct Actions] Pass actionId directly to performAction.\n\nBefore this patch we locally modified the Bundle to forward the actionId\nof a dynamic action. That implicit behavior is confusing and led to a\nbug when an extras Bundle passed to performDirectAction from a calling\nassist app was null, the map here would be immutable. This patch just\nplainly passes along the actionId as a function argument.\n\nR\u003dszermatt@chromium.org\n\nBug: b/138833619\nChange-Id: I4a884a5ad288533f55b13937433d8f6ba3d18418\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919353\nReviewed-by: Stephane Zermatten \u003cszermatt@chromium.org\u003e\nCommit-Queue: Mathias Carlen \u003cmcarlen@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716138}\n"
+    },
+    {
+      "commit": "b053b57b4addd0f59c1c6908448291fa5c617be4",
+      "tree": "0dba69a8d027c58bd91147f511bd34718cb2656b",
+      "parents": [
+        "6f0b107bd14bf9788e5dffb2586986f7f746222c"
+      ],
+      "author": {
+        "name": "Greg Thompson",
+        "email": "grt@chromium.org",
+        "time": "Mon Nov 18 14:11:20 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:11:20 2019"
+      },
+      "message": "Revert \"Suppress beforeunload and in-progress download prompts for forced restarts.\"\n\nThis reverts commit 2c98cab9372aa3bcadfc3f32bc2acd21b11d2156.\n\nReason for revert: Parent change causing crashes.\n\nOriginal change\u0027s description:\n\u003e Suppress beforeunload and in-progress download prompts for forced restarts.\n\u003e\n\u003e This change introduces RelaunchIgnoreUnloadHandlers and uses it in\n\u003e RelaunchNotificationController when the deadline for a forced relaunch\n\u003e is reached. This new function is to AttemptRelaunch as\n\u003e ExitIgnoreUnloadHandlers is to AttemptExit.\n\u003e\n\u003e This also introduces browser_shutdown::ShouldIgnoreUnloadHandlers(),\n\u003e which is a convenience for code that needs to know whether or not an\n\u003e in-progress shutdown should ignore unload handlers.\n\u003e\n\u003e BUG\u003d958865\n\u003e\n\u003e Change-Id: I91a9832d745e95b7436b176d78f5e39ed14addd2\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1914380\n\u003e Commit-Queue: Greg Thompson \u003cgrt@chromium.org\u003e\n\u003e Auto-Submit: Greg Thompson \u003cgrt@chromium.org\u003e\n\u003e Reviewed-by: Marc Treib \u003ctreib@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715901}\n\nTBR\u003dtreib@chromium.org,grt@chromium.org\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nBug: 958865,1025638,1025634\nChange-Id: I0584904da38d150481e8450aacaff0f909a53d12\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919356\nReviewed-by: Greg Thompson \u003cgrt@chromium.org\u003e\nCommit-Queue: Greg Thompson \u003cgrt@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716137}\n"
+    },
+    {
+      "commit": "6f0b107bd14bf9788e5dffb2586986f7f746222c",
+      "tree": "b561a430991675190693c7d8402557f4140cff3e",
+      "parents": [
+        "f849c296a24baf25268dfa76644719e05bb2ce6e"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 14:09:13 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:09:13 2019"
+      },
+      "message": "Roll src/third_party/perfetto 14e51ec7bc7a..f66be5a8dcf8 (1 commits)\n\nhttps://android.googlesource.com/platform/external/perfetto.git/+log/14e51ec7bc7a..f66be5a8dcf8\n\ngit log 14e51ec7bc7a..f66be5a8dcf8 --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 lalitm@google.com Merge \"trace_processor: remove ts/dur DCHECK on span join\"\n\nCreated with:\n  gclient setdep -r src/third_party/perfetto@f66be5a8dcf8\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/perfetto-chromium-autoroll\nPlease CC perfetto-bugs@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nTBR\u003dperfetto-bugs@google.com\n\nBug: None\nChange-Id: Ia0f2089decdf8d32e2000c010332253847993e0f\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921860\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716136}\n"
+    },
+    {
+      "commit": "f849c296a24baf25268dfa76644719e05bb2ce6e",
+      "tree": "ddbec7e091a04d4e405598286f732b3cd3f39caf",
+      "parents": [
+        "2db411eca736755438231d98eee733bb6b58483c"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 14:04:26 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:04:26 2019"
+      },
+      "message": "Roll src/third_party/angle bbdabb3b9b0a..954888135395 (1 commits)\n\nhttps://chromium.googlesource.com/angle/angle.git/+log/bbdabb3b9b0a..954888135395\n\ngit log bbdabb3b9b0a..954888135395 --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 angle-autoroll@skia-public.iam.gserviceaccount.com Roll third_party/vulkan-validation-layers/src f8ea20adee82..e2441190bb0c (42 commits)\n\nCreated with:\n  gclient setdep -r src/third_party/angle@954888135395\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/angle-chromium-autoroll\nPlease CC courtneygo@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel\nTBR\u003dcourtneygo@google.com\n\nBug: chromium:None\nChange-Id: I7abb86fbac18e4193551c3f2da8719883c461153\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921861\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716135}\n"
+    },
+    {
+      "commit": "2db411eca736755438231d98eee733bb6b58483c",
+      "tree": "5477deb26af5c1e2bc1c662092dc6027a2bdcddd",
+      "parents": [
+        "0e93150c6812a2dc5cb0e7fc48aa3492d3709785"
+      ],
+      "author": {
+        "name": "Greg Thompson",
+        "email": "grt@chromium.org",
+        "time": "Mon Nov 18 14:00:08 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 14:00:08 2019"
+      },
+      "message": "Do not create the local sync backend folder when local sync is not enabled.\n\nBUG\u003d980487\n\nChange-Id: Idfeaacd4f5d1e295cc26301eedfee33c1d733ea8\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1920045\nAuto-Submit: Greg Thompson \u003cgrt@chromium.org\u003e\nCommit-Queue: Mikel Astiz \u003cmastiz@chromium.org\u003e\nReviewed-by: Mikel Astiz \u003cmastiz@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716134}\n"
+    },
+    {
+      "commit": "0e93150c6812a2dc5cb0e7fc48aa3492d3709785",
+      "tree": "f485c812232306c2c0fa4a78746eb0e0e7e958f0",
+      "parents": [
+        "ed1f9e1f884c746655d74b1a98ffe4c03f06bdc8"
+      ],
+      "author": {
+        "name": "Dominique Fauteux-Chapleau",
+        "email": "domfc@chromium.org",
+        "time": "Mon Nov 18 13:55:31 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:55:31 2019"
+      },
+      "message": "Move DMToken class from browser/policy to components/policy.\n\nMove BrowserDMToken from browser/ to DMToken in components/ in order\nto be able to use DMToken in components/. Also makes the\nCreate*Token BrowserDMToken functions private to avoid misuses by\ncallers and instead expose *TokenForTesting functions to make their\nintended usage more explicit.\n\nThis CL is mostly restructuring the new DM token classes and doesn\u0027t\nchange functionality.\n\nBug: 1020296\nChange-Id: Ied05c56807352c0bddc4d8ecb11e148d05608e55\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1906901\nCommit-Queue: Dominique Fauteux-Chapleau \u003cdomfc@chromium.org\u003e\nReviewed-by: Scott Violet \u003csky@chromium.org\u003e\nReviewed-by: Daniel Rubery \u003cdrubery@chromium.org\u003e\nReviewed-by: Owen Min \u003czmin@chromium.org\u003e\nReviewed-by: Tien Mai \u003ctienmai@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716133}\n"
+    },
+    {
+      "commit": "ed1f9e1f884c746655d74b1a98ffe4c03f06bdc8",
+      "tree": "29d62d9b416b8526be781ec73e9ceed3a1dfe6c4",
+      "parents": [
+        "317f88c9897ab8591b197ae8c154110f2c53044f"
+      ],
+      "author": {
+        "name": "v8-ci-autoroll-builder",
+        "email": "v8-ci-autoroll-builder@chops-service-accounts.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 13:37:00 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:37:00 2019"
+      },
+      "message": "Update V8 to version 8.0.289.\n\nSummary of changes available at:\nhttps://chromium.googlesource.com/v8/v8/+log/295649fd..be605ce3\n\nPlease follow these instructions for assigning/CC\u0027ing issues:\nhttps://v8.dev/docs/triage-issues\n\nPlease close rolling in case of a roll revert:\nhttps://v8-roll.appspot.com/\nThis only works with a Google account.\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:linux_optional_gpu_tests_rel\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:mac_optional_gpu_tests_rel\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:win_optional_gpu_tests_rel\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel\n\nTBR\u003dhablich@chromium.org,v8-waterfall-sheriff@grotations.appspotmail.com\n\nChange-Id: Ib2fc9b9fec3a765ec3d9a0bcc6d430d20f165be0\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921535\nCommit-Queue: v8-ci-autoroll-builder \u003cv8-ci-autoroll-builder@chops-service-accounts.iam.gserviceaccount.com\u003e\nReviewed-by: v8-ci-autoroll-builder \u003cv8-ci-autoroll-builder@chops-service-accounts.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716132}\n"
+    },
+    {
+      "commit": "317f88c9897ab8591b197ae8c154110f2c53044f",
+      "tree": "c0e25afb18628190affff1f07de34d990663bccc",
+      "parents": [
+        "965cd6e10d4dde42c2f155780b39b3977c5a6b99"
+      ],
+      "author": {
+        "name": "chromium-internal-autoroll",
+        "email": "chromium-internal-autoroll@skia-corp.google.com.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 13:30:46 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:30:46 2019"
+      },
+      "message": "Roll src-internal 8ff52d37c080..8d735c19a560 (1 commits)\n\nhttps://chrome-internal.googlesource.com/chrome/src-internal.git/+log/8ff52d37c080..8d735c19a560\n\n\nCreated with:\n  gclient setdep -r src-internal@8d735c19a560\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://skia-autoroll.corp.goog/r/src-internal-chromium-autoroll\nPlease CC jbudorick@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chrome.try:linux-chromeos-chrome\nTBR\u003djbudorick@google.com\n\nBug: chromium:None\nChange-Id: I4002199f5f112a1d87cc115f18b4392a8e089191\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921859\nReviewed-by: chromium-internal-autoroll \u003cchromium-internal-autoroll@skia-corp.google.com.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-internal-autoroll \u003cchromium-internal-autoroll@skia-corp.google.com.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716131}\n"
+    },
+    {
+      "commit": "965cd6e10d4dde42c2f155780b39b3977c5a6b99",
+      "tree": "bd105f6f0bb878805c5ebe415298c0b6f1f3a5aa",
+      "parents": [
+        "a8c02b334220e00b6ade42a95ea717359f897502"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 13:29:30 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:29:30 2019"
+      },
+      "message": "Roll src/third_party/catapult 473984fca427..9c2e77d9113f (1 commits)\n\nhttps://chromium.googlesource.com/catapult.git/+log/473984fca427..9c2e77d9113f\n\ngit log 473984fca427..9c2e77d9113f --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 perezju@chromium.org [Telemetry] Write results after each test\n\nCreated with:\n  gclient setdep -r src/third_party/catapult@9c2e77d9113f\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/catapult-autoroll\nPlease CC simonhatch@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel\nTBR\u003dsimonhatch@google.com\n\nBug: chromium:973837\nChange-Id: I4cf948b994378827d0f91e301ca4b0c1bc14c4bb\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921857\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716130}\n"
+    },
+    {
+      "commit": "a8c02b334220e00b6ade42a95ea717359f897502",
+      "tree": "9f8db0b02097ce440b73a758986f284048b443f7",
+      "parents": [
+        "0bb2529b163a350a11dd62187ed84bedcc3fee52"
+      ],
+      "author": {
+        "name": "David Roger",
+        "email": "droger@chromium.org",
+        "time": "Mon Nov 18 13:28:35 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:28:35 2019"
+      },
+      "message": "[signin] Enable ForceDiceMigration by default\n\nChange-Id: Ic7de9065ae3a093c208bb1b8631751986b2a60ab\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917283\nReviewed-by: Monica Basta \u003cmsalama@chromium.org\u003e\nCommit-Queue: David Roger \u003cdroger@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716129}\n"
+    },
+    {
+      "commit": "0bb2529b163a350a11dd62187ed84bedcc3fee52",
+      "tree": "511edca5d504ef3daed1e0ab0b1a54c6dfa7d523",
+      "parents": [
+        "701c894d678a7cb0ca53adef68402c575c6f69f1"
+      ],
+      "author": {
+        "name": "Morten Stenshorne",
+        "email": "mstensho@chromium.org",
+        "time": "Mon Nov 18 13:28:25 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:28:25 2019"
+      },
+      "message": "Clean up LayoutObject::FindNonAnonymousContainingBlock().\n\nMost importantly, it can be a static method.\n\nChange-Id: I010faeb002108999b1e4d6ac66d6781cfcdb9f23\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1910230\nReviewed-by: Aleks Totic \u003catotic@chromium.org\u003e\nReviewed-by: Ian Kilpatrick \u003cikilpatrick@chromium.org\u003e\nCommit-Queue: Morten Stenshorne \u003cmstensho@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716128}\n"
+    },
+    {
+      "commit": "701c894d678a7cb0ca53adef68402c575c6f69f1",
+      "tree": "66db202e3195dd2051582f9af5d37acdaf09b17f",
+      "parents": [
+        "35d85787e0df2eac36235155a46c21b406c349aa"
+      ],
+      "author": {
+        "name": "Victor-Gabriel Savu",
+        "email": "vsavu@google.com",
+        "time": "Mon Nov 18 13:17:26 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:17:26 2019"
+      },
+      "message": "add LockToSingleUser DBUS service\n\nUsed to extend DeviceRebootOnUserSignout to virtual machines.\n\nUsed by:\nhttps://chromium-review.googlesource.com/c/chromiumos/platform2/+/1840695\n\nDesign Document:\nhttps://docs.google.com/document/d/1cIZsPD6rwm6ca5r8GCXUqr2gT1axsoGe0S0Hl2-OgCE\n\nBug: 986755\nChange-Id: Ice437dd7efe605c85675bf52fe0f5c9e6603f718\nCq-Depend: chromium:1840693\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1840891\nReviewed-by: Mattias Nissler \u003cmnissler@chromium.org\u003e\nReviewed-by: Steven Bennetts \u003cstevenjb@chromium.org\u003e\nCommit-Queue: Victor-Gabriel Savu \u003cvsavu@google.com\u003e\nCr-Commit-Position: refs/heads/master@{#716127}\n"
+    },
+    {
+      "commit": "35d85787e0df2eac36235155a46c21b406c349aa",
+      "tree": "4e1067342a5111207dd61297867f21dcfc37e27c",
+      "parents": [
+        "8e79fc1da9d70619132107b8fd946c6a7a7d8e1a"
+      ],
+      "author": {
+        "name": "Guido Urdaneta",
+        "email": "guidou@chromium.org",
+        "time": "Mon Nov 18 13:16:25 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:16:25 2019"
+      },
+      "message": "Move blink/renderer/modules/port_allocator.[cc|h] to renderer/platform\n\nAll p2p files except this one are in renderer/platform. The reason was\nissues caused by the lack of support for component builds in\nlibwerbrtc.\n\nNow that libwebrtc supports component builds, all files can be in the\nsame directory and modules/p2p no longer exists.\n\nBug: 787254\nChange-Id: I91e023ef03029a6b740d709cea3735804846099f\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919921\nReviewed-by: Kentaro Hara \u003charaken@chromium.org\u003e\nCommit-Queue: Guido Urdaneta \u003cguidou@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716126}\n"
+    },
+    {
+      "commit": "8e79fc1da9d70619132107b8fd946c6a7a7d8e1a",
+      "tree": "e9d8ee06950593e66a12a51ea0aac6ccf1674c44",
+      "parents": [
+        "230df597d3a1163827dd3c1fa0124a075d5413eb"
+      ],
+      "author": {
+        "name": "Andreas Haas",
+        "email": "ahaas@chromium.org",
+        "time": "Mon Nov 18 13:00:11 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 13:00:11 2019"
+      },
+      "message": "[filereaderloader][cleanup] Create DOMArrayBuffer directly\n\nThere was an in-between creation of an ArrayBuffer which is not\nnecessary.\n\nBug: chromium:1008840\nChange-Id: I003b7a95170ea6fa2e6f308f02b532f51c190c84\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1911213\nReviewed-by: Kinuko Yasuda \u003ckinuko@chromium.org\u003e\nCommit-Queue: Andreas Haas \u003cahaas@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716125}\n"
+    },
+    {
+      "commit": "230df597d3a1163827dd3c1fa0124a075d5413eb",
+      "tree": "641509ac2b2174ecbe28cad7dc9ba4b763d25b95",
+      "parents": [
+        "e84f7faadaa9515fc2276367aa55e16fc6cf5fd0"
+      ],
+      "author": {
+        "name": "Juan Antonio Navarro Perez",
+        "email": "perezju@chromium.org",
+        "time": "Mon Nov 18 12:56:27 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:56:27 2019"
+      },
+      "message": "[tools/perf] Add dashboard_service.MatchTestPaths function\n\nExpose the \u0027/list_tests\u0027 API from the dashboard.\n\nThis function will be handy to find wrongly stored story names from\nthe linked bug.\n\nBug: 1022380\nChange-Id: Ib8e87549feebb127df6c4c35d735761ccc45e2f9\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917773\nReviewed-by: Mikhail Khokhlov \u003ckhokhlov@google.com\u003e\nCommit-Queue: Mikhail Khokhlov \u003ckhokhlov@google.com\u003e\nAuto-Submit: Juan Antonio Navarro Pérez \u003cperezju@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716124}\n"
+    },
+    {
+      "commit": "e84f7faadaa9515fc2276367aa55e16fc6cf5fd0",
+      "tree": "906f82e2dae8504aa472a31030827a22405548df",
+      "parents": [
+        "3a5677b5814628463041459f435a83f0c0664412"
+      ],
+      "author": {
+        "name": "Yifan Luo",
+        "email": "lyf@google.com",
+        "time": "Mon Nov 18 12:54:51 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:54:51 2019"
+      },
+      "message": "refactoring the fetch metadata tests\n\nTBR\u003dalexmos@chromium.org\n\nBug: 1012190\nChange-Id: Ie0baad25c88fd5552cc7e440d438d26606ec9be1\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917778\nCommit-Queue: Yifan Luo \u003clyf@google.com\u003e\nReviewed-by: Mike West \u003cmkwst@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716123}\n"
+    },
+    {
+      "commit": "3a5677b5814628463041459f435a83f0c0664412",
+      "tree": "44b723d35b831bf9e2ac4682270bd11f7c8a69b0",
+      "parents": [
+        "500a74f5cc4f4ded9073f5434d4f6284c16d8bc1"
+      ],
+      "author": {
+        "name": "Kuo Jen Wei",
+        "email": "inker@google.com",
+        "time": "Mon Nov 18 12:52:44 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:52:44 2019"
+      },
+      "message": "[CCA] Add closure compiler check to layout.js\n\nBug: b/141518780\nTest: Pass closure compiler check, tast run \u003cDUT\u003e \u0027camera.CCAUI*\u0027 and\nvalidate all function of CCA on HALv1/v3 device works correctly.\n\nChange-Id: Id278c309e505336282c70a2cdb0425dc84b4d27f\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1913229\nReviewed-by: Shik Chen \u003cshik@chromium.org\u003e\nCommit-Queue: Shik Chen \u003cshik@chromium.org\u003e\nAuto-Submit: Kuo Jen Wei \u003cinker@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716122}\n"
+    },
+    {
+      "commit": "500a74f5cc4f4ded9073f5434d4f6284c16d8bc1",
+      "tree": "d2cf78e3ed0997de4f961980d3d2cca770413566",
+      "parents": [
+        "36d524c252b60b059deaf7849fb6b082bee3018d"
+      ],
+      "author": {
+        "name": "Mike West",
+        "email": "mkwst@chromium.org",
+        "time": "Mon Nov 18 12:42:08 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:42:08 2019"
+      },
+      "message": "Add a runtime flag to enforce strict MIME type checks for workers.\n\nWe\u0027re currently enforcing strict MIME type checks for `importScripts()`\nand nested workers. Firefox would like to enforce them for the top-level\nworker script as well. We should follow suit.\n\nThis patch also excludes `blob:`, `filesystem:`, and `data:` from\nscripty MIME type checks. This is the behavior Firefox is shipping,\nand seems reasonable, given that the risk of sniffing scripts is\nhighest when dealing with resources delivered from a server, rather\nthan resources which are already accessible to the page causing\ntheir execution.\n\nhttps://github.com/whatwg/html/issues/3255\nhttps://bugzilla.mozilla.org/show_bug.cgi?id\u003d1583657\n\nBug: 794548\nChange-Id: Ia55621243b8e279a30f457c6a3a20b9fa13cd3d4\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917528\nCommit-Queue: Mike West \u003cmkwst@chromium.org\u003e\nReviewed-by: Daniel Vogelheim \u003cvogelheim@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716121}\n"
+    },
+    {
+      "commit": "36d524c252b60b059deaf7849fb6b082bee3018d",
+      "tree": "f9b7dcbd841a0b3dd0fcd2f0941d498346f88599",
+      "parents": [
+        "d0d664215c9b06e35bd57bf416502771ac374a65"
+      ],
+      "author": {
+        "name": "François Beaufort",
+        "email": "beaufort.francois@gmail.com",
+        "time": "Mon Nov 18 12:28:56 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:28:56 2019"
+      },
+      "message": "Update Web NFC flag expiration\n\nChange-Id: I64b768922a16decf60df57006cbd93a6f9a677b2\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1920669\nAuto-Submit: François Beaufort \u003cbeaufort.francois@gmail.com\u003e\nReviewed-by: Rijubrata Bhaumik \u003crijubrata.bhaumik@intel.com\u003e\nCommit-Queue: Rijubrata Bhaumik \u003crijubrata.bhaumik@intel.com\u003e\nCr-Commit-Position: refs/heads/master@{#716120}\n"
+    },
+    {
+      "commit": "d0d664215c9b06e35bd57bf416502771ac374a65",
+      "tree": "0a7f9efd8f84381607f64a031f84dba7f6d8a0a2",
+      "parents": [
+        "04c580cff5bca8e82ea4cd5c7baf70dc86cc37a1"
+      ],
+      "author": {
+        "name": "Renato Silva",
+        "email": "rrsilva@google.com",
+        "time": "Mon Nov 18 12:28:25 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:28:25 2019"
+      },
+      "message": "Reland \"Fix browser test EulaTest.LoadOffline\"\n\nThis is a reland of 5fd0e6ed59bdd1a521e96022d144e4f229fa4837\n\nOriginal change\u0027s description:\n\u003e Fix browser test EulaTest.LoadOffline\n\u003e \n\u003e This commit improves the reliability of the EULA browser test\n\u003e EulaTest.LoadOffline. This test was disabled due to its flakiness\n\u003e in the past and is now enabled again.\n\u003e \n\u003e Tested locally. Ran 100 tests under stress without any errors.\n\u003e \n\u003e Bug: 1015948\n\u003e Change-Id: I59bc8612da9f5be526a2aa28d13ee70400dbb01e\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1892775\n\u003e Reviewed-by: Roman Sorokin [CET] \u003crsorokin@chromium.org\u003e\n\u003e Commit-Queue: Renato Silva \u003crrsilva@google.com\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#712516}\n\nBug: 1015948\nChange-Id: I47bd386c589344f011b03bd6e24f50f08c3b42a7\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1899862\nReviewed-by: Denis Kuznetsov [CET] \u003cantrim@chromium.org\u003e\nReviewed-by: Roman Sorokin [CET] \u003crsorokin@chromium.org\u003e\nCommit-Queue: Renato Silva \u003crrsilva@google.com\u003e\nCr-Commit-Position: refs/heads/master@{#716119}\n"
+    },
+    {
+      "commit": "04c580cff5bca8e82ea4cd5c7baf70dc86cc37a1",
+      "tree": "05aeb4ab4d3262e4bc18aa5d52b8863b233ae0d3",
+      "parents": [
+        "2f241f00dda9fe84f35f013582c66d992c254273"
+      ],
+      "author": {
+        "name": "Jinho Bang",
+        "email": "jinho.bang@samsung.com",
+        "time": "Mon Nov 18 12:22:02 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:22:02 2019"
+      },
+      "message": "WebGPU: GPUVertexAttributeDescriptor.offset should be `required`\n\nAccording to the spec change[1], the attribute byte offset is no longer\noptional.\n\n[1] https://github.com/gpuweb/gpuweb/pull/469\n\nBug: 852089\nChange-Id: I5c29652a56531273a9205151cee0598c6911268f\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919532\nCommit-Queue: Corentin Wallez \u003ccwallez@chromium.org\u003e\nReviewed-by: Corentin Wallez \u003ccwallez@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716118}\n"
+    },
+    {
+      "commit": "2f241f00dda9fe84f35f013582c66d992c254273",
+      "tree": "62c274bf1091d2f2bdb67441a403697d84822f21",
+      "parents": [
+        "eba5eb27a101dd243fa4ce8f55bd875f67cfba8f"
+      ],
+      "author": {
+        "name": "Victor-Gabriel Savu",
+        "email": "vsavu@google.com",
+        "time": "Mon Nov 18 12:20:04 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:20:04 2019"
+      },
+      "message": "allow LockToSingleUserManager to handle virtual machines\n\nExtending DeviceRebootOnUserSignout to virtual machines requires\nchecks for Crostini, PluginVM and vmc in LockToSingleUserManager.\n\nDesign Document:\nhttps://docs.google.com/document/d/1cIZsPD6rwm6ca5r8GCXUqr2gT1axsoGe0S0Hl2-OgCE\n\nBug: 986755\nChange-Id: I54c82a293b9db22158b05ded590b9463c3528668\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1840892\nCommit-Queue: Victor-Gabriel Savu \u003cvsavu@google.com\u003e\nReviewed-by: Maksim Ivanov \u003cemaxx@chromium.org\u003e\nReviewed-by: Jesse Doherty \u003cjwd@chromium.org\u003e\nReviewed-by: Steven Bennetts \u003cstevenjb@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716117}\n"
+    },
+    {
+      "commit": "eba5eb27a101dd243fa4ce8f55bd875f67cfba8f",
+      "tree": "ea04788766f31c96db73ec8cccc8277d94c5b553",
+      "parents": [
+        "a2a05f68c3fb0c143a44966cade642a6dff6da54"
+      ],
+      "author": {
+        "name": "Jinho Bang",
+        "email": "jinho.bang@samsung.com",
+        "time": "Mon Nov 18 12:16:42 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:16:42 2019"
+      },
+      "message": "WebGPU: Change .getQueue() to .defaultQueue\n\nIn an effort to support multi-queue with WebGPU, the shape of the API\nhas changed in the spec side[1].\n\n[1] https://github.com/gpuweb/gpuweb/pull/490\n\nBug: 852089\nChange-Id: I6971ef859f4af1b94663589039009d416f1bc9a9\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919531\nReviewed-by: Corentin Wallez \u003ccwallez@chromium.org\u003e\nCommit-Queue: Corentin Wallez \u003ccwallez@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716116}\n"
+    },
+    {
+      "commit": "a2a05f68c3fb0c143a44966cade642a6dff6da54",
+      "tree": "1bd38dda21227ed23b9bf7b17f684109d24aa22e",
+      "parents": [
+        "60e3c65c363ddbe5c0468f1ae30c0d18e6b377f8"
+      ],
+      "author": {
+        "name": "Vasilii Sukhanov",
+        "email": "vasilii@chromium.org",
+        "time": "Mon Nov 18 12:15:12 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:15:12 2019"
+      },
+      "message": "Fix PasswordManagerInteractiveTest flakiness.\n\n- rewrite WaitForElementValue for the UI test. The existing implementation uses\nonchange event. It\u0027s problematic for the real keystroke because the event is\ntriggered on focus change only. oninput is the right choice here.\n- use WaitForElementValue in FillElementWithValue to enforce that the right\ninput handles the keystrokes.\n\nBug: 1024902\nChange-Id: Ib7752e39b62d20c73ed06ff85f4fdea641d0955d\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919154\nCommit-Queue: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nReviewed-by: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716115}\n"
+    },
+    {
+      "commit": "60e3c65c363ddbe5c0468f1ae30c0d18e6b377f8",
+      "tree": "185ce2eee860636f32c89fd613926e8f4cef15c4",
+      "parents": [
+        "ccfc3cd49ea3afb337d92751c50ab9970b9a1b38"
+      ],
+      "author": {
+        "name": "Emily Stark",
+        "email": "estark@google.com",
+        "time": "Mon Nov 18 12:14:42 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 12:14:42 2019"
+      },
+      "message": "Add GetWidget overrides to ExternalProtocolDialog, fix keyboard lock\n\nThese overrides are necessary for keyboard focus to work properly when\nthe dialog is shown.\n\nBug: 1025343\nChange-Id: I1a63c6a5e9233bd972cf1a07ad89670bf05a8a67\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919947\nCommit-Queue: Bret Sepulveda \u003cbsep@chromium.org\u003e\nReviewed-by: Bret Sepulveda \u003cbsep@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716114}\n"
+    },
+    {
+      "commit": "ccfc3cd49ea3afb337d92751c50ab9970b9a1b38",
+      "tree": "22effc8684210857a899299e175a4b6222e7a14d",
+      "parents": [
+        "262125f4cb972cab8009313d4cdca61e8925ed29"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 11:58:46 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 11:58:46 2019"
+      },
+      "message": "Roll src/third_party/angle 37f7316ecaaf..bbdabb3b9b0a (1 commits)\n\nhttps://chromium.googlesource.com/angle/angle.git/+log/37f7316ecaaf..bbdabb3b9b0a\n\ngit log 37f7316ecaaf..bbdabb3b9b0a --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 angle-autoroll@skia-public.iam.gserviceaccount.com Roll third_party/glslang/src 37dcb894574e..f4d4668529f1 (1 commits)\n\nCreated with:\n  gclient setdep -r src/third_party/angle@bbdabb3b9b0a\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/angle-chromium-autoroll\nPlease CC courtneygo@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel\nTBR\u003dcourtneygo@google.com\n\nBug: chromium:None\nChange-Id: Id2f7e63a3372379e1ba4c3bd2103e019fc38812e\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921849\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716113}\n"
+    },
+    {
+      "commit": "262125f4cb972cab8009313d4cdca61e8925ed29",
+      "tree": "3777a0019a6fb18d41c8c8f42e234aa24c3d689c",
+      "parents": [
+        "96f7e9f0aa9073a7b4703728eb9cfacf407993f2"
+      ],
+      "author": {
+        "name": "Vadym Doroshenko",
+        "email": "dvadym@chromium.org",
+        "time": "Mon Nov 18 11:53:32 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 11:53:32 2019"
+      },
+      "message": "Revert \"Roll src/net/third_party/quiche/src/ 94591413f..409b261f3 (3 commits)\"\n\nThis reverts commit ae376cbc9e4ccc1b2687754c8d57f134d9717b88.\n\nReason for revert: As a result of this CL a few quiche tests are failing on Windows, the first failure https://ci.chromium.org/p/chromium/builders/ci/Win7%20Tests%20%28dbg%29%281%29/80140?blamelist\u003d1#blamelist-tab\n\nOriginal change\u0027s description:\n\u003e Roll src/net/third_party/quiche/src/ 94591413f..409b261f3 (3 commits)\n\u003e\n\u003e https://quiche.googlesource.com/quiche.git/+log/94591413f1fe..409b261f38af\n\u003e\n\u003e $ git log 94591413f..409b261f3 --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n\u003e 2019-11-15 rch Add a new QUIC platform API QUIC_SLOW_TEST which will be used in chrome to disable tests which are too slow.\n\u003e 2019-11-15 wub gfe-relnote: (n/a) Change QUIC\u0027s AckedPacketVector and LostPacketVector from std::vector to QuicInlinedVector with a inline capacity of 2. Not protected.\n\u003e 2019-11-15 fayang Introduce HandshakeState enum to sent packet manager. Not used yet, not protected.\n\u003e\n\u003e Created with:\n\u003e   roll-dep src/net/third_party/quiche/src src/third_party/quic_trace/src\n\u003e\n\u003e Add missing QUIC files to net/BUILD.gn\n\u003e\n\u003e\n\u003e Change-Id: If98c172bc524cac0e64c8445d54ed9041b3c29d7\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1918285\n\u003e Auto-Submit: Ryan Hamilton \u003crch@chromium.org\u003e\n\u003e Commit-Queue: Ryan Hamilton \u003crch@chromium.org\u003e\n\u003e Commit-Queue: Renjie Tang \u003crenjietang@chromium.org\u003e\n\u003e Reviewed-by: Renjie Tang \u003crenjietang@chromium.org\u003e\n\u003e Reviewed-by: Ryan Hamilton \u003crch@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715831}\n\nTBR\u003drch@chromium.org,renjietang@chromium.org\nBug:1025417\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nChange-Id: I361d4e065d652059406d3327ca4dbad00a98f62e\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917217\nReviewed-by: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nCommit-Queue: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716112}\n"
+    },
+    {
+      "commit": "96f7e9f0aa9073a7b4703728eb9cfacf407993f2",
+      "tree": "6f97fb27a20eaccbb3595b19375c3f186e99572f",
+      "parents": [
+        "66d634a343bef7c3943f4c3435f734e21f175889"
+      ],
+      "author": {
+        "name": "Ross McIlroy",
+        "email": "rmcilroy@chromium.org",
+        "time": "Mon Nov 18 11:39:49 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 11:39:49 2019"
+      },
+      "message": "Add browse:news:cricbuzz:2019 system health story\n\nThis CL was created automatically with tools/perf/update_wpr script\n\nR\u003dperezju@chromium.org\n\nChange-Id: Ic776473539b833f243c8fd36e0a83323192b8cc4\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919144\nReviewed-by: Juan Antonio Navarro Pérez \u003cperezju@chromium.org\u003e\nCommit-Queue: Ross McIlroy \u003crmcilroy@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716111}\n"
+    },
+    {
+      "commit": "66d634a343bef7c3943f4c3435f734e21f175889",
+      "tree": "0c14a7fa9777cb08108157a56f59ca17ad793c3c",
+      "parents": [
+        "e9c31320a3517be233e1725c817c302bf7b7ee10"
+      ],
+      "author": {
+        "name": "Xianzhu Wang",
+        "email": "wangxianzhu@chromium.org",
+        "time": "Mon Nov 18 11:38:46 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 11:38:46 2019"
+      },
+      "message": "Restore failure expectation for printing/setPrinting.html\n\nThe baseline created in https://chromium-review.googlesource.com/c/chromium/src/+/1915461\nwas incorrect.\n\nBug: 377696\nChange-Id: I43203bc9602b8552fdefca4a8976067af8b1716b\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1918401\nCommit-Queue: Morten Stenshorne \u003cmstensho@chromium.org\u003e\nReviewed-by: Morten Stenshorne \u003cmstensho@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716110}\n"
+    },
+    {
+      "commit": "e9c31320a3517be233e1725c817c302bf7b7ee10",
+      "tree": "c7a557fd3aecf9295ee5b7ae23963e5588027f81",
+      "parents": [
+        "03838b5a5a1cd6934565a90df0f6c13a148984ab"
+      ],
+      "author": {
+        "name": "Alan Cutter",
+        "email": "alancutter@chromium.org",
+        "time": "Mon Nov 18 11:32:25 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 11:32:25 2019"
+      },
+      "message": "Extend flag for PWA manifest updating to M83\n\nThis flag is set to expire in M80, the feature still needs more development\ntime.\n\nBug: 926083\nChange-Id: Ib8c84cf59f1a50a3ed13e05ec18130edc26daeb7\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1918910\nAuto-Submit: Alan Cutter \u003calancutter@chromium.org\u003e\nReviewed-by: Eric Willigers \u003cericwilligers@chromium.org\u003e\nCommit-Queue: Eric Willigers \u003cericwilligers@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716109}\n"
+    },
+    {
+      "commit": "03838b5a5a1cd6934565a90df0f6c13a148984ab",
+      "tree": "a17bd348b813e4f32d19f17f48adf771e887900b",
+      "parents": [
+        "2f162de74db51df0c633e0f35b52bac28c5aaa92"
+      ],
+      "author": {
+        "name": "Vadym Doroshenko",
+        "email": "dvadym@chromium.org",
+        "time": "Mon Nov 18 11:25:20 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 11:25:20 2019"
+      },
+      "message": "Revert \"Enable Assistant launcher UI feature flag by default\"\n\nThis reverts commit 7f5baf2370749b8c8347290812e9be2b264a2394.\n\nReason for revert: It\u0027s likely a culprit for HomeButtonTest.LongPressGesture failure. Here is the first failure https://ci.chromium.org/p/chromium/builders/ci/Linux%20Chromium%20OS%20ASan%20LSan%20Tests%20%281%29/36138?blamelist\u003d1#blamelist-tab\n\nOriginal change\u0027s description:\n\u003e Enable Assistant launcher UI feature flag by default\n\u003e \n\u003e Bug: b/144383302\n\u003e Test: Manual Test\n\u003e Change-Id: I50a2462e2094d08d52141a626c0dad89d55d27c0\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1915322\n\u003e Commit-Queue: Yue Li \u003cupdowndota@chromium.org\u003e\n\u003e Reviewed-by: Xiaohui Chen \u003cxiaohuic@chromium.org\u003e\n\u003e Reviewed-by: Xiyuan Xia \u003cxiyuan@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715971}\n\nTBR\u003dxiyuan@chromium.org,xiaohuic@chromium.org,updowndota@chromium.org\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nBug: b/144383302\nChange-Id: Ib29930d141e1e9ad23c92f5a06fa7ac5ae572a54\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917215\nReviewed-by: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nCommit-Queue: Vadym Doroshenko \u003cdvadym@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716108}\n"
+    },
+    {
+      "commit": "2f162de74db51df0c633e0f35b52bac28c5aaa92",
+      "tree": "27055c77b44514f3203aa4bdae715387dcf4867a",
+      "parents": [
+        "1b5487d8928c6a163a1992292db59911ee190f16"
+      ],
+      "author": {
+        "name": "Guido Urdaneta",
+        "email": "guidou@chromium.org",
+        "time": "Mon Nov 18 11:08:49 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 11:08:49 2019"
+      },
+      "message": "Check if video frames are null in MediaStreamVideoRendererSink::RenderEndOfStream().\n\nAlso check that CreateFrame() does not return null before filling it in\nVideoFrame::CreateColorFrame(). VideoFrame::CreateFrame() can return null in some\ncases, so it is safer to check if it returns a null frame in order to avoid crashes.\n\nBug: 1021601\nChange-Id: I0e68b152d89f599afd433bc2172903633d94e8e2\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917362\nReviewed-by: Chrome Cunningham \u003cchcunningham@chromium.org\u003e\nCommit-Queue: Guido Urdaneta \u003cguidou@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716107}\n"
+    },
+    {
+      "commit": "1b5487d8928c6a163a1992292db59911ee190f16",
+      "tree": "ffae9f5106d4bffcfdd04ff847793191aecce46f",
+      "parents": [
+        "84cf6bd63c8a65e4aa2b57177db3224a479596e7"
+      ],
+      "author": {
+        "name": "Alex Clarke",
+        "email": "alexclarke@chromium.org",
+        "time": "Mon Nov 18 10:40:11 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 10:40:11 2019"
+      },
+      "message": "Enable crash keys for the browser IO thread\n\nThis will help us track down where crashing tasks come from.\n\nBug: 1024587\nChange-Id: I084e915026d9df963b5f4ddae551e7d070ce4449\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917209\nCommit-Queue: Alex Clarke \u003calexclarke@chromium.org\u003e\nCommit-Queue: Tobias Sargeant \u003ctobiasjs@chromium.org\u003e\nAuto-Submit: Alex Clarke \u003calexclarke@chromium.org\u003e\nReviewed-by: Tobias Sargeant \u003ctobiasjs@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716106}\n"
+    },
+    {
+      "commit": "84cf6bd63c8a65e4aa2b57177db3224a479596e7",
+      "tree": "7d62adec394e70e5f6c2b7d2637c489f8bac0451",
+      "parents": [
+        "c691d6d092a9b1fe73aa9047908f3e3b6dbd2589"
+      ],
+      "author": {
+        "name": "Shik Chen",
+        "email": "shik@chromium.org",
+        "time": "Mon Nov 18 10:34:29 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 10:34:29 2019"
+      },
+      "message": "CCA: Add the missing chdir() in cca.py\n\nIt\u0027s wrongly removed when addressing comment in\nhttps://crrev.com/c/1892972/15/chrome/browser/resources/chromeos/camera/utils/cca.py#243\n\nBug: 1019581\nTest: Run cca.py outside of the CCA directory.\nChange-Id: I2d190385e35d6ac35831db1c4a75f2ca66f4b05e\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921605\nCommit-Queue: Shik Chen \u003cshik@chromium.org\u003e\nCommit-Queue: Wei Lee \u003cwtlee@chromium.org\u003e\nAuto-Submit: Shik Chen \u003cshik@chromium.org\u003e\nReviewed-by: Wei Lee \u003cwtlee@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716105}\n"
+    },
+    {
+      "commit": "c691d6d092a9b1fe73aa9047908f3e3b6dbd2589",
+      "tree": "c7950900741bd60764279e627a545647272f919c",
+      "parents": [
+        "4af42bed3602a525addc8c918eeb2a91b0601134"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 10:31:37 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 10:31:37 2019"
+      },
+      "message": "Roll src/third_party/dawn e0eeef4b34ff..d0c07f112eb2 (2 commits)\n\nhttps://dawn.googlesource.com/dawn.git/+log/e0eeef4b34ff..d0c07f112eb2\n\ngit log e0eeef4b34ff..d0c07f112eb2 --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 jiajie.hu@intel.com Vulkan: Fix release of semaphores in the recording context\n2019-11-18 yunchao.he@intel.com Add memory synchronization tests - storage to uniform sync\n\nCreated with:\n  gclient setdep -r src/third_party/dawn@d0c07f112eb2\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/dawn-chromium-autoroll\nPlease CC cwallez@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:dawn-linux-x64-deps-rel;luci.chromium.try:dawn-mac-x64-deps-rel;luci.chromium.try:dawn-win10-x64-deps-rel;luci.chromium.try:dawn-win10-x86-deps-rel\nTBR\u003dcwallez@google.com\n\nBug: None\nChange-Id: I311fee05eeeb436ada19f550bb16fd2b81b51c8b\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921525\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716104}\n"
+    },
+    {
+      "commit": "4af42bed3602a525addc8c918eeb2a91b0601134",
+      "tree": "99e1544b32949c4d7fe72c184a513af2302ac021",
+      "parents": [
+        "23366940cf0556445312faa09e1c9d55e809e6d1"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 10:30:36 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 10:30:36 2019"
+      },
+      "message": "Roll Fuchsia SDK from 889649889929 to 889647049961\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/fuchsia-sdk-chromium-autoroll\nPlease CC cr-fuchsia+bot@chromium.org on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:fuchsia-arm64-cast;luci.chromium.try:fuchsia-x64-cast\nTBR\u003dcr-fuchsia+bot@chromium.org\n\nChange-Id: Iebc8ef8987c98d84851923cfadcef7b73ee4b1bc\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921524\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716103}\n"
+    },
+    {
+      "commit": "23366940cf0556445312faa09e1c9d55e809e6d1",
+      "tree": "70230b18632ea3b2ce005bc3f46e8c3b03973f2d",
+      "parents": [
+        "aeec2ba175b9cbefda5d7d416edff684f2db97ef"
+      ],
+      "author": {
+        "name": "Peter K. Lee",
+        "email": "pkl@chromium.org",
+        "time": "Mon Nov 18 10:30:32 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 10:30:32 2019"
+      },
+      "message": "Fixes a comment that became outdated when files were moved.\n\nhttp://crrev/c/1551781 moved files, but a comment is referring to the\nold location of BUILD.gn\n\nChange-Id: Id6ddbe50c14915deb4144e5976648ceeec732882\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921604\nAuto-Submit: Peter Lee \u003cpkl@chromium.org\u003e\nReviewed-by: Gauthier Ambard \u003cgambard@chromium.org\u003e\nCommit-Queue: Gauthier Ambard \u003cgambard@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716102}\n"
+    },
+    {
+      "commit": "aeec2ba175b9cbefda5d7d416edff684f2db97ef",
+      "tree": "d3fa74bc6fa5571ae0e6b948958cce8715c1a3b5",
+      "parents": [
+        "f6f2afe93d24b8c7823dc281ba5a3f2d33262fa4"
+      ],
+      "author": {
+        "name": "Yoav Weiss",
+        "email": "yoavweiss@chromium.org",
+        "time": "Mon Nov 18 10:04:40 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 10:04:40 2019"
+      },
+      "message": "[client-hints] Allow 3P legacy Client-Hints to work with Feature Policy\n\nCurrently there are two different flags that control sending Client Hints\nto cross-origin resources: Feature Policy delegation (off-by-default) and\na build flag that sends legacy hints on Android.\n\nThis CL makes sure that these two flags play nice together, and adds\nvirtual test suites to exercise them.\n\nBUG: 1022366\nChange-Id: I00ed4e9ed5a64e378def3d90227f238b9b3eb374\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1893196\nCommit-Queue: Yoav Weiss \u003cyoavweiss@chromium.org\u003e\nReviewed-by: Tarun Bansal \u003ctbansal@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716101}\n"
+    },
+    {
+      "commit": "f6f2afe93d24b8c7823dc281ba5a3f2d33262fa4",
+      "tree": "8c342376f36f4433762246307c8bd2f0fca8e384",
+      "parents": [
+        "6245a891f944ae8041a9a5050ea41dcb71166ac0"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 09:43:50 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:43:50 2019"
+      },
+      "message": "Roll src/third_party/angle 51b5a3222b60..37f7316ecaaf (1 commits)\n\nhttps://chromium.googlesource.com/angle/angle.git/+log/51b5a3222b60..37f7316ecaaf\n\ngit log 51b5a3222b60..37f7316ecaaf --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 angle-autoroll@skia-public.iam.gserviceaccount.com Roll third_party/SwiftShader 102fd19c65f4..aba1020d3914 (7 commits)\n\nCreated with:\n  gclient setdep -r src/third_party/angle@37f7316ecaaf\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/angle-chromium-autoroll\nPlease CC courtneygo@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel\nTBR\u003dcourtneygo@google.com\n\nBug: chromium:None\nChange-Id: If5d5a28b1d929853c76fa3fc3c0cd6a983b700a3\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921755\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716100}\n"
+    },
+    {
+      "commit": "6245a891f944ae8041a9a5050ea41dcb71166ac0",
+      "tree": "50a6ae3f4bfe2e4f096f4af21d328e13eb720b80",
+      "parents": [
+        "55cc3921f38c7900f26298fb7ab49fff7eba0435"
+      ],
+      "author": {
+        "name": "Mirko Bonadei",
+        "email": "mbonadei@chromium.org",
+        "time": "Mon Nov 18 09:42:10 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:42:10 2019"
+      },
+      "message": "Clean up field_trial and metrics deps.\n\nBoth \"field_trial\" and \"metrics\" are build target that are\noverwritten by Chromium (except in some cases, see the BUILD.gn\nfile).\nThis CL moves these dependencies from sub-targets to the\nWebRTC component build target and it is the prelude of a WebRTC\ncleanup [1].\n\n[1] - https://webrtc-review.googlesource.com/c/src/+/159862\n\nBug: webrtc:9419\nChange-Id: Iba42cc51370c2c10cf967db3ed0c9a47959e9ed5\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917514\nReviewed-by: Patrik Höglund \u003cphoglund@chromium.org\u003e\nCommit-Queue: Mirko Bonadei \u003cmbonadei@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716099}\n"
+    },
+    {
+      "commit": "55cc3921f38c7900f26298fb7ab49fff7eba0435",
+      "tree": "690721fbcd21b1e1c9fe331332569e6f995f24f0",
+      "parents": [
+        "d108f020daaf4ba94c8d5eb739c02d1a5b5b71bf"
+      ],
+      "author": {
+        "name": "Alexander Hendrich",
+        "email": "hendrich@chromium.org",
+        "time": "Mon Nov 18 09:39:46 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:39:46 2019"
+      },
+      "message": "[Extensions] Remove chrome.usb exception for Imprivata extensions\n\nThis CL removes the temporarily granted exception to use chrome.usb\nfor our Imprivata extensions. With https://crrev.com/c/1908544 we\nwill be using WebUSB for M80 and later versions instead.\n\nBug: 995294\nChange-Id: Ic8e1469c2ad5b9d07319af7bb995f90dd337fbe6\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1916860\nReviewed-by: Devlin \u003crdevlin.cronin@chromium.org\u003e\nCommit-Queue: Alexander Hendrich \u003chendrich@chromium.org\u003e\nAuto-Submit: Alexander Hendrich \u003chendrich@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716098}\n"
+    },
+    {
+      "commit": "d108f020daaf4ba94c8d5eb739c02d1a5b5b71bf",
+      "tree": "70ad72805f22fd57fc11fc19189fd5f751a6ec49",
+      "parents": [
+        "f9fbe7b6c317ea763cf6d781547a760e9f5b91e5"
+      ],
+      "author": {
+        "name": "Cherie Cheung",
+        "email": "cherieccy@google.com",
+        "time": "Mon Nov 18 09:38:16 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:38:16 2019"
+      },
+      "message": "arcvm: Populate StartArcVmRequest.rootfs_writable according to filesystem status\n\nIf host root filesystem is writable and guest system image is\nEXT format, then the guest root filesystem should also be writable and\nStartArcVmRequest.rootfs_writable is set to true.\n\nThis CL is a part of the change for b/144154973.\n\nBug: 144154973\nTEST\u003d1. On host, \u0027mount -o remount,rw /\u0027\n     2. Make sure guest system image is EXT4\n     3. On host, \u0027restart ui\u0027\n     4. On guest, \u0027mount -o remount,rw /\u0027\n     5. Guest root filesystem should be writable\n\nChange-Id: Id58ab406ca74f240aeadcfef2888c6578a6c5857\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1916523\nCommit-Queue: Cherie Cheung \u003ccherieccy@chromium.org\u003e\nReviewed-by: Yusuke Sato \u003cyusukes@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716097}\n"
+    },
+    {
+      "commit": "f9fbe7b6c317ea763cf6d781547a760e9f5b91e5",
+      "tree": "5f3855ead2ece7450b2721b29259bcf4ebeee269",
+      "parents": [
+        "c975bcfdd9cb5fa9df3b3012715b963ca58a0cb6"
+      ],
+      "author": {
+        "name": "Jochen Eisinger",
+        "email": "jochen@chromium.org",
+        "time": "Mon Nov 18 09:37:26 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:37:26 2019"
+      },
+      "message": "Add presubmit check for set noparent rules\n\nBug: 1018108\nChange-Id: I5d86962e4dcdd3a95058efef86735a11a75ac8c4\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1908531\nCommit-Queue: Jochen Eisinger \u003cjochen@chromium.org\u003e\nReviewed-by: Dirk Pranke \u003cdpranke@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716096}\n"
+    },
+    {
+      "commit": "c975bcfdd9cb5fa9df3b3012715b963ca58a0cb6",
+      "tree": "11100b186c3d94a9a936c33cf13885b44695e651",
+      "parents": [
+        "cee36ddab01adb45af0b72dd3f3fe141194cca17"
+      ],
+      "author": {
+        "name": "Roger Johannesson",
+        "email": "rogerj@vewd.com",
+        "time": "Mon Nov 18 09:21:33 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:21:33 2019"
+      },
+      "message": "[SpatNav] Media elements should not be default focusable\n\nhttps://codereview.chromium.org/2700663002 added key event listeners\non the media element to improve keyboard accessibility.\n\nElement::SupportsSpatialNavigationFocus() checks if elements has key\nevent listeners when deciding if a element should be focusable by\nspatial navigation. Element::SupportsSpatialNavigationFocus() is called\nby Element::SupportsFocus().\n\nSo, the CL above makes the media element default focusable if\n--enable-spatial-navigation is used.\n\nThis CL modifies Element::SupportsSpatialNavigationFocus() to only consider\nelements with javascript based key and click event listeners as focusable.\n\nBUG\u003d1023287\n\nChange-Id: I254a6e2d1968f9bc1042a3ecaabc81ff3d99eb3b\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1913411\nCommit-Queue: Roger Johannesson \u003crogerj@vewd.com\u003e\nReviewed-by: Mason Freed \u003cmasonfreed@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716095}\n"
+    },
+    {
+      "commit": "cee36ddab01adb45af0b72dd3f3fe141194cca17",
+      "tree": "d515605bd189673311ca0eba8777ca37dbd0b5ba",
+      "parents": [
+        "ed3da4b7f2952274c9256a19614cae696e964b21"
+      ],
+      "author": {
+        "name": "Miyoung Shin",
+        "email": "myid.shin@igalia.com",
+        "time": "Mon Nov 18 09:09:53 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:09:53 2019"
+      },
+      "message": "Convert DocumentCoordinationUnit client to use BrowserInterfaceBroker\n\nThis change converts DocumentCoordinationUnit mojom interface\nclient in components to use BrowserInterfaceBroker.\nSince DocumentCoordinationUnit is a WebContentsObserver and a static\nhelper function is used to register its binder.\n\nBug: 936482\nChange-Id: I146d28c81a39b4f977f53c92b567f6409e727553\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1895026\nReviewed-by: Kinuko Yasuda \u003ckinuko@chromium.org\u003e\nReviewed-by: Oksana Zhuravlova \u003coksamyt@chromium.org\u003e\nReviewed-by: Sigurður Ásgeirsson \u003csiggi@chromium.org\u003e\nReviewed-by: Chris Hamilton \u003cchrisha@chromium.org\u003e\nCommit-Queue: Miyoung Shin \u003cmyid.shin@igalia.com\u003e\nCr-Commit-Position: refs/heads/master@{#716094}\n"
+    },
+    {
+      "commit": "ed3da4b7f2952274c9256a19614cae696e964b21",
+      "tree": "8035e4dee6936573788ff7145994cfd67c74215e",
+      "parents": [
+        "cf52fc37b0e82eccfad3d5e23c70275a3ebb916c"
+      ],
+      "author": {
+        "name": "Mirko Bonadei",
+        "email": "mbonadei@chromium.org",
+        "time": "Mon Nov 18 09:06:32 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:06:32 2019"
+      },
+      "message": "Depend on the WebRTC component.\n\nStarting from [1], WebRTC supports the Chromium component build and\ndirect dependencies on //third_party/webrtc are disallowed.\nA dependency on //third_party/webrtc_overrides:webrtc_component is\nrequired instead.\n\n[1] - https://chromium-review.googlesource.com/c/chromium/src/+/1874722\n\nBug: webrtc:9419\nChange-Id: I8a09d9d2c9a54ff45950b03779832e231213d215\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1917204\nReviewed-by: Mark Cogan \u003cmarq@chromium.org\u003e\nCommit-Queue: Mirko Bonadei \u003cmbonadei@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716093}\n"
+    },
+    {
+      "commit": "cf52fc37b0e82eccfad3d5e23c70275a3ebb916c",
+      "tree": "391d287795cc35e67d6e97af96657632db3e7a2a",
+      "parents": [
+        "ef834bae3450e4b6d83a35a43d16b999cc65c963"
+      ],
+      "author": {
+        "name": "Ella Ge",
+        "email": "eirage@chromium.org",
+        "time": "Mon Nov 18 09:01:56 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:01:56 2019"
+      },
+      "message": "Add webapks-watchlist watchlist to android_webapk list\n\nChange-Id: I4fa313c41fc3ed776b2e2c0f1370c0a006533824\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1914347\nCommit-Queue: Ella Ge \u003ceirage@chromium.org\u003e\nReviewed-by: Glenn Hartmann \u003chartmanng@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716092}\n"
+    },
+    {
+      "commit": "ef834bae3450e4b6d83a35a43d16b999cc65c963",
+      "tree": "e7cb36fb158bff947355adfac113e66742130f69",
+      "parents": [
+        "ad1fd3841cfc86512c1e9340bed670104a6feb24"
+      ],
+      "author": {
+        "name": "Hiroki Sato",
+        "email": "hirokisato@google.com",
+        "time": "Mon Nov 18 09:01:51 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 09:01:51 2019"
+      },
+      "message": "Output selected state for genericContainer and heading\n\nIn ARC++ accessibility, some nodes of generic container or heading role\ncan have a selected state, but it was not announced by ChromeVox.\n\nThis CL adds an output of selected status.\n\nBug: b:130186975\nTest: still passes browser_tests --gtest_filter\u003d\"ChromeVoxOutputE2ETest*\"\nChange-Id: I53d9babacb5696802dc36b2adaf212d1116d0047\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1905291\nReviewed-by: David Tseng \u003cdtseng@chromium.org\u003e\nReviewed-by: Sara Kato \u003csarakato@chromium.org\u003e\nCommit-Queue: Hiroki Sato \u003chirokisato@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716091}\n"
+    },
+    {
+      "commit": "ad1fd3841cfc86512c1e9340bed670104a6feb24",
+      "tree": "69d873ab7bc44dc991e96da0f699e55218b3aff2",
+      "parents": [
+        "f2d7382a9299b2bae90bf187ba6907959f767ab1"
+      ],
+      "author": {
+        "name": "sandromaggi",
+        "email": "sandromaggi@google.com",
+        "time": "Mon Nov 18 08:39:29 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 08:39:29 2019"
+      },
+      "message": "[Autofill Assistant] Move profile initialization logic to c++\n\nBefore this change the model created the profiles on load and added\nit into the required field. The APIs being used were triggering JNI\ncalls that are now being used directly. The sorting logic has been\nmoved to keep the current behaviour.\n\nThis change requires exposing some previously \"hidden\" functionality\nto create Java profiles from the c++ data in the\npersonal_data_manager_android. These functions do not need any\nadditional information and can be made static (similar to other\nalready existing functionality).\n\nBug: b/144005336\nChange-Id: Ic12465f2270ebd877ac380d724bfaa1b460dc7dd\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1900986\nReviewed-by: Christos Froussios \u003ccfroussios@chromium.org\u003e\nReviewed-by: Mathias Carlen \u003cmcarlen@chromium.org\u003e\nReviewed-by: Clemens Arbesser \u003carbesser@google.com\u003e\nCommit-Queue: Sandro Maggi \u003csandromaggi@google.com\u003e\nCr-Commit-Position: refs/heads/master@{#716090}\n"
+    },
+    {
+      "commit": "f2d7382a9299b2bae90bf187ba6907959f767ab1",
+      "tree": "632ff7b457ce14419b14eb6d69efd43b466e0934",
+      "parents": [
+        "109f324af7ac8ccbde54bc0e457fbbb0ce243290"
+      ],
+      "author": {
+        "name": "Noel Gordon",
+        "email": "noel@chromium.org",
+        "time": "Mon Nov 18 08:31:49 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 08:31:49 2019"
+      },
+      "message": "[directorytree] Fix invalid file_types.css removable CSS rules\n\nCL:1449472 added some invalid rules for removable volumes||partitions\nsee for example @line 474 which begins ...\n\n   tree .tree-item \u003e .tree-item \u003e .tree-row \u003e\n   [volume-type-icon\u003d\u0027removable\u0027] {\n     ...\n   }\n\nBut .tree-item \u003e .tree-item matches nothing in FilesApp: a .tree-item\nis never a direct child of its parent .tree-item. So remove this rule\nand now try to understand @line 466 of CL:1449472\n\n   tree .tree-item[selected] \u003e .tree-row \u003e\n   .tree-row[selected] [volume-type-icon\u003d\u0027removable\u0027][volume-sub...\n\nWhich might be a transcription error, and then the rule runs onto the\nnext line .tree-row \u003e .tree-row[selected], but once again .tree-row \u003e\n.tree-row never matches anything in FilesApp. Remove and replace this\nrule with an approximation of CL:1449472 intent.\n\nBug: 992819\nChange-Id: I552890e021c02d1dd304e51a49b772eaf7f13546\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921595\nReviewed-by: Luciano Pacheco \u003clucmult@chromium.org\u003e\nCommit-Queue: Noel Gordon \u003cnoel@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716089}\n"
+    },
+    {
+      "commit": "109f324af7ac8ccbde54bc0e457fbbb0ce243290",
+      "tree": "8a49b07701d05081750ea662446addf892494885",
+      "parents": [
+        "3e76f34603f274c25348aff58695131568b0da0b"
+      ],
+      "author": {
+        "name": "Christopher Lam",
+        "email": "calamity@chromium.org",
+        "time": "Mon Nov 18 08:25:41 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 08:25:41 2019"
+      },
+      "message": "[OS Settings] Centralize all colors into cros_colors.css.\n\nBug: 1018654\nChange-Id: I538746e3650bfb21a12092b8fb550c5d74eb7fad\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1913944\nReviewed-by: Kyle Horimoto \u003ckhorimoto@chromium.org\u003e\nCommit-Queue: calamity \u003ccalamity@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716088}\n"
+    },
+    {
+      "commit": "3e76f34603f274c25348aff58695131568b0da0b",
+      "tree": "3c09791a8d33eace2fd43d825f43abd6b40509d0",
+      "parents": [
+        "422fbbe481b2b475cce35cc20e06764d1b80cc9c"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 08:22:08 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 08:22:08 2019"
+      },
+      "message": "Roll src/third_party/chromite fc2fd0f3b97c..e6cccd1fb9ad (1 commits)\n\nhttps://chromium.googlesource.com/chromiumos/chromite.git/+log/fc2fd0f3b97c..e6cccd1fb9ad\n\ngit log fc2fd0f3b97c..e6cccd1fb9ad --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 vapier@chromium.org paygen: utils: drop psutil usage\n\nCreated with:\n  gclient setdep -r src/third_party/chromite@e6cccd1fb9ad\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/chromite-chromium-autoroll\nPlease CC chrome-os-gardeners@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:chromeos-kevin-rel\nTBR\u003dchrome-os-gardeners@google.com\n\nBug: None\nChange-Id: I492f8e3a0e5ce5ea04c0e5efe82af5119852fec4\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921751\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716087}\n"
+    },
+    {
+      "commit": "422fbbe481b2b475cce35cc20e06764d1b80cc9c",
+      "tree": "4e10a4286544a9f5e1f9d561119a59850a3e4ab1",
+      "parents": [
+        "a2e3c1cef1838e0b4da1adb9e871c474df991637"
+      ],
+      "author": {
+        "name": "Chih-Yu Huang",
+        "email": "akahuang@google.com",
+        "time": "Mon Nov 18 08:19:13 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 08:19:13 2019"
+      },
+      "message": "Reland \"media/gpu: Add ImageProcessorWithPool class.\"\n\nThis CL adds ImageProcessorWithPool class, which is a simple client of\nImageProcessor. By injecting a DmabufVideoFramePool for allocating\noutput frames and a callback for receiving processed frames, the\ncaller could process input frames by Process() without managing output\nbuffer.\n\nBUG\u003dchromium:1004727\nTEST\u003dninja image_processor_test\n\nChange-Id: I472366e4bf9460a304fcc8c4d43277c21e16c2c0\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1918917\nReviewed-by: Hirokazu Honda \u003chiroh@chromium.org\u003e\nCommit-Queue: Chih-Yu Huang \u003cakahuang@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716086}\n"
+    },
+    {
+      "commit": "a2e3c1cef1838e0b4da1adb9e871c474df991637",
+      "tree": "2d3082757e6c3662b12f5e1dbe869b852da717d6",
+      "parents": [
+        "fb357bf420122a576b7eb3825d69effb8d290d86"
+      ],
+      "author": {
+        "name": "Alan Cutter",
+        "email": "alancutter@chromium.org",
+        "time": "Mon Nov 18 08:18:28 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 08:18:28 2019"
+      },
+      "message": "WebApps: Support PWA manifest scope updating\n\nThis CL enables PWA manifest updating to detect when sites update the\nscope field.\n\nBug: 926083\nChange-Id: Ib304ef830c215f564c64cf55c0d978308e2524e3\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921012\nCommit-Queue: Alan Cutter \u003calancutter@chromium.org\u003e\nAuto-Submit: Alan Cutter \u003calancutter@chromium.org\u003e\nReviewed-by: Alexey Baskakov \u003cloyso@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716085}\n"
+    },
+    {
+      "commit": "fb357bf420122a576b7eb3825d69effb8d290d86",
+      "tree": "a5a7e9d333f75e1b01cab7f758aa8dbcaecd8d34",
+      "parents": [
+        "24f36bc20e274c2aa1d26be71ecdfb9a549386be"
+      ],
+      "author": {
+        "name": "Shik Chen",
+        "email": "shik@chromium.org",
+        "time": "Mon Nov 18 08:18:08 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 08:18:08 2019"
+      },
+      "message": "CCA: Use dev key in manifest.json for dev version\n\nIf we use the prod key, the app id would collide with the built-in component\napp when using \"load unpacked\" with the build/camera directory.\n\nBug: 1019581\nTest: Check the app id is correct after \"load unpacked\".\nChange-Id: I8ff8413c96318979165188c3d633c00d0feaef86\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921598\nCommit-Queue: Shik Chen \u003cshik@chromium.org\u003e\nReviewed-by: Wei Lee \u003cwtlee@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716084}\n"
+    },
+    {
+      "commit": "24f36bc20e274c2aa1d26be71ecdfb9a549386be",
+      "tree": "d610dea55d74635a41c68cf46090f447fcb1c714",
+      "parents": [
+        "93c33a92e429617ec770371c3b6f4fe68b18a906"
+      ],
+      "author": {
+        "name": "Hiroki Nakagawa",
+        "email": "nhiroki@chromium.org",
+        "time": "Mon Nov 18 07:49:50 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 07:49:50 2019"
+      },
+      "message": "ServiceWorker: Remove unnecessary friendliness from ServiceWorkerProviderHost\n\nBug: 931087\nChange-Id: I10beb004d9b557ea6db67099eb090ea9898a8130\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921592\nCommit-Queue: Hiroki Nakagawa \u003cnhiroki@chromium.org\u003e\nCommit-Queue: Matt Falkenhagen \u003cfalken@chromium.org\u003e\nAuto-Submit: Hiroki Nakagawa \u003cnhiroki@chromium.org\u003e\nReviewed-by: Matt Falkenhagen \u003cfalken@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716083}\n"
+    },
+    {
+      "commit": "93c33a92e429617ec770371c3b6f4fe68b18a906",
+      "tree": "bf877a80f9e22ae1255272d468a2db26dc336183",
+      "parents": [
+        "a45551d9b8d06e4f5d0441e0ddcc50e63a80a7dd"
+      ],
+      "author": {
+        "name": "Glen Robertson",
+        "email": "glenrob@chromium.org",
+        "time": "Mon Nov 18 07:34:44 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 07:34:44 2019"
+      },
+      "message": "desktop-pwas: Allow same-origin redirects when loading install URL for policy apps.\n\nWeb apps installed through external sources (ie. default, policy, or system\ninstalled) could fail to install due to redirects, making the install process\nflaky. This was also unexpected for admins setting policy.\n\n\nBug: 1015650\nChange-Id: I616da7b9f68098591c63818be0467c69428350a2\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1914139\nCommit-Queue: Glen Robertson \u003cglenrob@chromium.org\u003e\nReviewed-by: Alan Cutter \u003calancutter@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716082}\n"
+    },
+    {
+      "commit": "a45551d9b8d06e4f5d0441e0ddcc50e63a80a7dd",
+      "tree": "98a1f7ad322a3d28f8506effc29850d69cf3d23a",
+      "parents": [
+        "08b5132cacee9ea4d4e672cc4f2ccc24120abea4"
+      ],
+      "author": {
+        "name": "Kuo Jen Wei",
+        "email": "inker@google.com",
+        "time": "Mon Nov 18 07:23:28 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 07:23:28 2019"
+      },
+      "message": "[CCA] Add closure compiler check to modes.js\n\nBug: b/141518780\nTest: Pass closure compiler check, tast run \u003cDUT\u003e \u0027camera.CCAUI*\u0027 and\nvalidate all function of CCA on HALv1/v3 device works correctly.\n\nChange-Id: I5dbb980bc4bcc99938fb8328aa5a74e6ddd463d7\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1913230\nReviewed-by: Shik Chen \u003cshik@chromium.org\u003e\nCommit-Queue: Kuo Jen Wei \u003cinker@chromium.org\u003e\nAuto-Submit: Kuo Jen Wei \u003cinker@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716081}\n"
+    },
+    {
+      "commit": "08b5132cacee9ea4d4e672cc4f2ccc24120abea4",
+      "tree": "15bd0bbb7a82f34a0d0aad535bb29a329de76548",
+      "parents": [
+        "c8eb4cef78d585ce51241738a2e3ebab5e576fcb"
+      ],
+      "author": {
+        "name": "Dominick Ng",
+        "email": "dominickn@chromium.org",
+        "time": "Mon Nov 18 07:15:17 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 07:15:17 2019"
+      },
+      "message": "Extend the lifetime of the app banner bypass flag.\n\nThis flag will likely be able to be removed soon as new improvements to\ndevtools are made. For now, keep it around.\n\nBUG: None\nChange-Id: I8cb531cbcea8260582fce5cbde4cae0ad3e22611\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921018\nCommit-Queue: Dominick Ng \u003cdominickn@chromium.org\u003e\nCommit-Queue: Maggie Cai \u003cmxcai@chromium.org\u003e\nAuto-Submit: Dominick Ng \u003cdominickn@chromium.org\u003e\nReviewed-by: Maggie Cai \u003cmxcai@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716080}\n"
+    },
+    {
+      "commit": "c8eb4cef78d585ce51241738a2e3ebab5e576fcb",
+      "tree": "5ab1e4ddcfef56033a39fa02ad7ec38e9c3316c7",
+      "parents": [
+        "b919db9e283cc85dca57ff619a707e784b567994"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 06:45:12 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 06:45:12 2019"
+      },
+      "message": "Roll src/third_party/catapult 48fbf27a09fb..473984fca427 (2 commits)\n\nhttps://chromium.googlesource.com/catapult.git/+log/48fbf27a09fb..473984fca427\n\ngit log 48fbf27a09fb..473984fca427 --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 dberris@chromium.org Pinpoint: Support jobs with no \u0027chart\u0027 argument\n2019-11-18 dberris@chromium.org Update OWNERS\n\nCreated with:\n  gclient setdep -r src/third_party/catapult@473984fca427\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/catapult-autoroll\nPlease CC crouleau@chromium.org on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel\nTBR\u003dcrouleau@chromium.org\n\nBug: chromium:1025229\nChange-Id: Ia4c98d112ea39ec1b95bd1ad4a3609662930e69f\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1920844\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716079}\n"
+    },
+    {
+      "commit": "b919db9e283cc85dca57ff619a707e784b567994",
+      "tree": "66868547f1f117138638cef0c67df9807f5de2ef",
+      "parents": [
+        "8f0465ddf6fd93f67446a0b56d44e0a3a6b14531"
+      ],
+      "author": {
+        "name": "Dominick Ng",
+        "email": "dominickn@chromium.org",
+        "time": "Mon Nov 18 06:17:16 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 06:17:16 2019"
+      },
+      "message": "Add dominickn to some Apps Foundation watchlists.\n\nBug: None\nChange-Id: I9d6b7d776db410f2dc4c7128cd378e71c6d2db42\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1916534\nReviewed-by: Maggie Cai \u003cmxcai@chromium.org\u003e\nCommit-Queue: Dominick Ng \u003cdominickn@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716078}\n"
+    },
+    {
+      "commit": "8f0465ddf6fd93f67446a0b56d44e0a3a6b14531",
+      "tree": "ff876b7648ef5d3a819d7a09f74b92b2abeeeaa9",
+      "parents": [
+        "6dd4c7b45e963ee1c9ed3e7e354083973c1ec052"
+      ],
+      "author": {
+        "name": "Hajime Hoshi",
+        "email": "hajimehoshi@chromium.org",
+        "time": "Mon Nov 18 06:13:55 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 06:13:55 2019"
+      },
+      "message": "Revert \"[Switch Access] Respond to changes in the accessibility tree\"\n\nThis reverts commit 684024dd264af1c193edf223774ec03b4213c39f.\n\nReason for revert: crbug.com/1025632 test failures\n\nOriginal change\u0027s description:\n\u003e [Switch Access] Respond to changes in the accessibility tree\n\u003e \n\u003e When the accessibility tree changes, events are fired on the\n\u003e automation API. This change updates the Switch Access tree when those\n\u003e events are received.\n\u003e \n\u003e Bug: 1023035\n\u003e Change-Id: I88e208b8ed9d10653db2395dd4424194c3ef3248\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1907550\n\u003e Commit-Queue: Anastasia Helfinstein \u003canastasi@google.com\u003e\n\u003e Auto-Submit: Anastasia Helfinstein \u003canastasi@google.com\u003e\n\u003e Reviewed-by: Akihiro Ota \u003cakihiroota@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715896}\n\nTBR\u003danastasi@google.com,akihiroota@chromium.org\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nBug: 1023035\nChange-Id: Ie2c4a038272973da9b34a1c08960fb763d1824f3\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921587\nReviewed-by: Hajime Hoshi \u003chajimehoshi@chromium.org\u003e\nCommit-Queue: Hajime Hoshi \u003chajimehoshi@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716077}\n"
+    },
+    {
+      "commit": "6dd4c7b45e963ee1c9ed3e7e354083973c1ec052",
+      "tree": "338c096a930582c60b24a34540bf691b29218aad",
+      "parents": [
+        "f1d0d164eef39ac6ee6b49d7988be1058709f973"
+      ],
+      "author": {
+        "name": "Julie Jeongeun Kim",
+        "email": "jkim@igalia.com",
+        "time": "Mon Nov 18 05:56:30 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:56:30 2019"
+      },
+      "message": "Convert network::mojom::URLLoaderClientPtr to new Mojo types\n\nThis CL converts network::mojom::URLLoaderClientPtr to new Mojo\ntypes using PendingRemote and Remote.\nIt also uses pending_remote for URLLoaderClient parameter from\nmojom::URLLoaderFactory::CreateLoaderAndStart() and updates its\nimplementations with new Mojo types.\n\nBug: 955171\nChange-Id: Ie93e96885628488df2d8a88929224cb43ad1ab53\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1901010\nCommit-Queue: Julie Kim \u003cjkim@igalia.com\u003e\nReviewed-by: David Roger \u003cdroger@chromium.org\u003e\nReviewed-by: Ken Rockot \u003crockot@google.com\u003e\nReviewed-by: Kinuko Yasuda \u003ckinuko@chromium.org\u003e\nReviewed-by: Luke Halliwell (slow) \u003challiwell@chromium.org\u003e\nReviewed-by: Tim Volodine \u003ctimvolodine@chromium.org\u003e\nReviewed-by: Sami Kyöstilä \u003cskyostil@chromium.org\u003e\nReviewed-by: Colin Blundell \u003cblundell@chromium.org\u003e\nReviewed-by: Wez \u003cwez@chromium.org\u003e\nReviewed-by: Matt Falkenhagen \u003cfalken@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716076}\n"
+    },
+    {
+      "commit": "f1d0d164eef39ac6ee6b49d7988be1058709f973",
+      "tree": "8aeec2f5e3bf6d48656deb4213795c7b1fe18415",
+      "parents": [
+        "7b047c7ae99978fd8c57b96f5ceefa5d9696d53f"
+      ],
+      "author": {
+        "name": "Archie Pusaka",
+        "email": "apusaka@chromium.org",
+        "time": "Mon Nov 18 05:51:30 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:51:30 2019"
+      },
+      "message": "feedback: Add a second bluetooth log file\n\nWhen a person sign in with an @google account, a bluetooth logging\nprocess will be started in the background which writes to a file. This\nparticular file has a size limit, so upon reaching the limit, it will\nstop logging. To improve the condition, bluetooth team introduces\ntwo-file log rotation system. Therefore, we now have two log files\ninstead of just one.\n\nThis patch adds the second log file into feedback report.\n\nBUG\u003db:143118775\nTEST\u003dDo the following.\n1) Observe that there is already a bluetooth log file, located in\n   /var/log/bluetooth/log.bz2\n2) Create another bluetooth log file /var/log/bluetooth/log.bz2.old\n3) Send feedback with \u0027bluetooth\u0027 as the keyword and choose to attach\n   bluetooth logs\n4) Observe in listnr that both logs are attached.\n\nChange-Id: I79e498ec2086f0ca92249292c6731fe868a79e4a\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1913231\nReviewed-by: J Kardatzke \u003cjkardatzke@chromium.org\u003e\nCommit-Queue: Archie Pusaka \u003capusaka@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716075}\n"
+    },
+    {
+      "commit": "7b047c7ae99978fd8c57b96f5ceefa5d9696d53f",
+      "tree": "17e81436cf8f06a322a1b86f2a6501adb25fb7f0",
+      "parents": [
+        "5ff7c319ffab4d9682c4d354d763584c6302f8c0"
+      ],
+      "author": {
+        "name": "Hajime Hoshi",
+        "email": "hajimehoshi@chromium.org",
+        "time": "Mon Nov 18 05:34:52 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:34:52 2019"
+      },
+      "message": "Revert \"cros: Always use in-app shelf for work area insets in tablet mode\"\n\nThis reverts commit 73f7019b11d970517feafb99b4ff6164d5cae92d.\n\nReason for revert: crbug.com/1025599: browser test failures\n\nOriginal change\u0027s description:\n\u003e cros: Always use in-app shelf for work area insets in tablet mode\n\u003e \n\u003e Avoid using the shelf size used for home launcher and overview\n\u003e when home launcher is showing. This should prevent the work area from\n\u003e needlessly changing (only system ui is shown when HomeLauncher is shown,\n\u003e so updating the work area only causes unnecessary calculations.\n\u003e \n\u003e Bug: 1019531\n\u003e Change-Id: Ief65e7ccfddc5ad81cb0084a649e5e34c74848b9\n\u003e Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1914838\n\u003e Reviewed-by: Alex Newcomer \u003cnewcomer@chromium.org\u003e\n\u003e Reviewed-by: Manu Cornet \u003cmanucornet@chromium.org\u003e\n\u003e Reviewed-by: Xiaoqian Dai \u003cxdai@chromium.org\u003e\n\u003e Commit-Queue: Alex Newcomer \u003cnewcomer@chromium.org\u003e\n\u003e Cr-Commit-Position: refs/heads/master@{#715983}\n\nTBR\u003dxdai@chromium.org,newcomer@chromium.org,manucornet@chromium.org\n\n# Not skipping CQ checks because original CL landed \u003e 1 day ago.\n\nBug: 1019531\nChange-Id: Id8cf83b4db7984bc6ad3f0f35c76e695897259c5\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921020\nReviewed-by: Hajime Hoshi \u003chajimehoshi@chromium.org\u003e\nCommit-Queue: Hajime Hoshi \u003chajimehoshi@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716074}\n"
+    },
+    {
+      "commit": "5ff7c319ffab4d9682c4d354d763584c6302f8c0",
+      "tree": "40f40804a65751bbf302c97952f68e3fec37d231",
+      "parents": [
+        "536defb4e0cfea3bd672f84416d0914a9089e521"
+      ],
+      "author": {
+        "name": "Chris Hall",
+        "email": "chrishall@chromium.org",
+        "time": "Mon Nov 18 05:32:02 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:32:02 2019"
+      },
+      "message": "Fixing typo in ash HoverHighlightView method name.\n\n\u0027SetAccessiblityState\u0027 -\u003e \u0027SetAccessibilityState\u0027.\n\nR\u003djennyz,jamescook\n\nChange-Id: I695a6bd6d5f4905bb06b6158084076f6c3fed3a0\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1918909\nReviewed-by: James Cook \u003cjamescook@chromium.org\u003e\nReviewed-by: Jenny Zhang \u003cjennyz@chromium.org\u003e\nCommit-Queue: Chris Hall \u003cchrishall@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716073}\n"
+    },
+    {
+      "commit": "536defb4e0cfea3bd672f84416d0914a9089e521",
+      "tree": "092a7d25f11aac375a9814d4c13121eeeeb55483",
+      "parents": [
+        "f32f45a2f0291d291a6d894aa50cb3a375a391b2"
+      ],
+      "author": {
+        "name": "Nicholas Verne",
+        "email": "nverne@chromium.org",
+        "time": "Mon Nov 18 05:29:12 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:29:12 2019"
+      },
+      "message": "Rename CrostiniUpgradeView to CrostiniUpdateComponentView.\n\nThis distinguishes it from the new WebUI-based upgrade dialog that upgrades\na container\u0027s Linux distribution.\n\nBug: 1025629\nChange-Id: Ic84f566f7ebe482da40df227222d42d4a1de7c9c\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921024\nReviewed-by: Nic Hollingum \u003chollingum@google.com\u003e\nCommit-Queue: Nicholas Verne \u003cnverne@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716072}\n"
+    },
+    {
+      "commit": "f32f45a2f0291d291a6d894aa50cb3a375a391b2",
+      "tree": "44213e5b7cf048f735794010eadc02ec1cc627f3",
+      "parents": [
+        "be6a74aff33c710771ff3af4879f696d63e995cd"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 05:05:15 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:05:15 2019"
+      },
+      "message": "Roll src/third_party/catapult a6bbfb935a25..48fbf27a09fb (1 commits)\n\nhttps://chromium.googlesource.com/catapult.git/+log/a6bbfb935a25..48fbf27a09fb\n\ngit log a6bbfb935a25..48fbf27a09fb --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 dberris@chromium.org Pinpoint: Treat grouping_label as optional\n\nCreated with:\n  gclient setdep -r src/third_party/catapult@48fbf27a09fb\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/catapult-autoroll\nPlease CC crouleau@chromium.org on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel\nTBR\u003dcrouleau@chromium.org\n\nBug: chromium:1024520\nChange-Id: Icc27a6a9e81638f19aa7287f215161d093025ff8\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1919761\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716071}\n"
+    },
+    {
+      "commit": "be6a74aff33c710771ff3af4879f696d63e995cd",
+      "tree": "f42b8b129b04285a3016a8470feb50e40c2d87d0",
+      "parents": [
+        "6b14ca52b915daa55516c87914f23529fb9f9062"
+      ],
+      "author": {
+        "name": "Fergal Daly",
+        "email": "fergal@chromium.org",
+        "time": "Mon Nov 18 05:05:12 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:05:12 2019"
+      },
+      "message": "audio-service/media/video-played-ranges-1.html is flaky on debug.\n\nPreviously it was marked flaky for Mac but it\u0027s also flaky for Win and\nLinux.\n\nhttps://test-results.appspot.com/data/layout_results/Linux_Tests__dbg__1_/79264/webkit_layout_tests/layout-test-results/media/video-played-ranges-1-actual.txt\n\nAlso update the bug number in TestExpectations.\n\nTBR\u003dchcunningham@chromium.org\n\nBug: 931533\nChange-Id: I81d5a2e68e950b5063ed94136b9922c2d9330cfd\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921025\nCommit-Queue: Fergal Daly \u003cfergal@chromium.org\u003e\nReviewed-by: Fergal Daly \u003cfergal@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716070}\n"
+    },
+    {
+      "commit": "6b14ca52b915daa55516c87914f23529fb9f9062",
+      "tree": "1c8f74584b581af6af721179444255fdb1aaf60e",
+      "parents": [
+        "62a5bc92b4e4d9df7238e768811c832f5f89eea5"
+      ],
+      "author": {
+        "name": "chromium-autoroll",
+        "email": "chromium-autoroll@skia-public.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 05:01:12 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 05:01:12 2019"
+      },
+      "message": "Roll src/third_party/dawn a930e599e17c..e0eeef4b34ff (1 commits)\n\nhttps://dawn.googlesource.com/dawn.git/+log/a930e599e17c..e0eeef4b34ff\n\ngit log a930e599e17c..e0eeef4b34ff --date\u003dshort --no-merges --format\u003d\u0027%ad %ae %s\u0027\n2019-11-18 yunchao.he@intel.com code refactoring: const color values\n\nCreated with:\n  gclient setdep -r src/third_party/dawn@e0eeef4b34ff\n\nIf this roll has caused a breakage, revert this CL and stop the roller\nusing the controls here:\nhttps://autoroll.skia.org/r/dawn-chromium-autoroll\nPlease CC cwallez@google.com on the revert to ensure that a human\nis aware of the problem.\n\nTo report a problem with the AutoRoller itself, please file a bug:\nhttps://bugs.chromium.org/p/skia/issues/entry?template\u003dAutoroller+Bug\n\nDocumentation for the AutoRoller is here:\nhttps://skia.googlesource.com/buildbot/+/master/autoroll/README.md\n\nCQ_INCLUDE_TRYBOTS\u003dluci.chromium.try:dawn-linux-x64-deps-rel;luci.chromium.try:dawn-mac-x64-deps-rel;luci.chromium.try:dawn-win10-x64-deps-rel;luci.chromium.try:dawn-win10-x86-deps-rel\nTBR\u003dcwallez@google.com\n\nBug: None\nChange-Id: I3b97e5685d84547df0911592fe9c4dc4bf2d17a8\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1920719\nReviewed-by: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCommit-Queue: chromium-autoroll \u003cchromium-autoroll@skia-public.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716069}\n"
+    },
+    {
+      "commit": "62a5bc92b4e4d9df7238e768811c832f5f89eea5",
+      "tree": "acbc83ac8fa0b832f48549549d742507a702d61d",
+      "parents": [
+        "42795061960ad44b27d5ea0c4a34ea97a7024484"
+      ],
+      "author": {
+        "name": "Chromium WPT Sync",
+        "email": "wpt-autoroller@chops-service-accounts.iam.gserviceaccount.com",
+        "time": "Mon Nov 18 04:33:21 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 04:33:21 2019"
+      },
+      "message": "Import wpt@fb96a45f854c47c73183f2d8cca19a4bea0e44c8\n\nUsing wpt-import in Chromium 55f44515cd0b9e7739b434d1c62f4b7e321cd530.\nWith Chromium commits locally applied on WPT:\n788a3004cc \"Fix failing Fetch Metadata WPT\"\nb16db92566 \"[Trusted Types] Add test for duplicate names in non-enforcing mode.\"\ne83dd93c86 \"Limit backtracking on regexp called from blink.\"\n6e3e930cf9 \"Change `sec-fetch-mode` from `no-cors` to `navigate` for \u003cembed\u003e / \u003cobject\u003e.\"\nc8b6e1ce8d \"Chromedriver] Fix PerformAction to support multi touch points cases\"\n\n\nNote to sheriffs: This CL imports external tests and adds\nexpectations for those tests; if this CL is large and causes\na few new failures, please fix the failures by adding new\nlines to TestExpectations rather than reverting. See:\nhttps://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_platform_tests.md\n\nDirectory owners for changes in this CL:\ncbiesinger@chromium.org:\n  external/wpt/css/css-flexbox\n\nNOAUTOREVERT\u003dtrue\nTBR\u003drobertma\n\nNo-Export: true\nChange-Id: Id4d7410090549c9fea506d571ad4b2af6ee6b867\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1916643\nReviewed-by: WPT Autoroller \u003cwpt-autoroller@chops-service-accounts.iam.gserviceaccount.com\u003e\nCommit-Queue: WPT Autoroller \u003cwpt-autoroller@chops-service-accounts.iam.gserviceaccount.com\u003e\nCr-Commit-Position: refs/heads/master@{#716068}\n"
+    },
+    {
+      "commit": "42795061960ad44b27d5ea0c4a34ea97a7024484",
+      "tree": "048ba0e49b65b2b9025929d258de27260f68b152",
+      "parents": [
+        "f23f76cb3a4a53482777a98a05813bef281236a0"
+      ],
+      "author": {
+        "name": "nancy",
+        "email": "nancylingwang@chromium.org",
+        "time": "Mon Nov 18 04:20:02 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 04:20:02 2019"
+      },
+      "message": "Remove the const for Window method in InstanceUpdate.\n\nInstanceUpdate\u0027s Window method is used to get the pointer of window\nin OnInstanceUpdate callback. If const, it prevents the operation on\nthe window, e.g window-\u003eSetProperty in ui, so remove the const.\n\nBUG\u003d1011235\n\nChange-Id: I14deed57307a6dd465f0c0f3cae30c86cce6279e\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1921008\nReviewed-by: Dominick Ng \u003cdominickn@chromium.org\u003e\nCommit-Queue: Nancy Wang \u003cnancylingwang@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716067}\n"
+    },
+    {
+      "commit": "f23f76cb3a4a53482777a98a05813bef281236a0",
+      "tree": "d56338e50895a9bfbf214edfecde2361571a4bf9",
+      "parents": [
+        "8efc87f7431964afb0b8e977870a7f4f71b17034"
+      ],
+      "author": {
+        "name": "Chris Hall",
+        "email": "chrishall@chromium.org",
+        "time": "Mon Nov 18 04:11:44 2019"
+      },
+      "committer": {
+        "name": "Commit Bot",
+        "email": "commit-bot@chromium.org",
+        "time": "Mon Nov 18 04:11:44 2019"
+      },
+      "message": "Trivial: Fixing typo in 2 comments in ash/wm.\n\nR\u003dsammiequon\n\nChange-Id: I1ded7b5ca3db14c4593c95e55d0edbc70fb43ca1\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1918908\nAuto-Submit: Chris Hall \u003cchrishall@chromium.org\u003e\nReviewed-by: Sammie Quon \u003csammiequon@chromium.org\u003e\nCommit-Queue: Chris Hall \u003cchrishall@chromium.org\u003e\nCr-Commit-Position: refs/heads/master@{#716066}\n"
+    }
+  ],
+  "next": "8efc87f7431964afb0b8e977870a7f4f71b17034"
+}
